@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testtree>
+  <title></title>
+  <version>1</version>
+  <caplfunction>
+    <name>Ttsqao4rr_Tet_TtInit</name>
+  </caplfunction>
+  <testfixture>
+    <title>ref_dtc_WindowDownUp</title>
+    <navid>11d806e4-5d08-44bc-9229-54ac1562980d</navid>
+    <testcase>
+      <title>Test Case 1</title>
+      <testcaseid>617c2e6d-ae0a-7b21-be65-3e1e1fca6ffc</testcaseid>
+      <caplfunction>
+        <name>Ttsqao4rr_Tet_Tc0</name>
+      </caplfunction>
+    </testcase>
+  </testfixture>
+</testtree>

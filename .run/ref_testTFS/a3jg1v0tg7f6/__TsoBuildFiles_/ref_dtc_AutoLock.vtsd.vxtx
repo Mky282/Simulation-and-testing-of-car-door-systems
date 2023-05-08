@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testtree>
+  <title></title>
+  <version>1</version>
+  <caplfunction>
+    <name>Ttdhqu412_Tet_TtInit</name>
+  </caplfunction>
+  <testfixture>
+    <title>ref_dtc_AutoLock</title>
+    <navid>9d91dc0f-5f4a-43ec-a0de-6f3008b0266a</navid>
+    <testcase>
+      <title>Test Case 1</title>
+      <testcaseid>51ab2d1e-8ab9-d3d4-9f4e-c211006c06bf</testcaseid>
+      <caplfunction>
+        <name>Ttdhqu412_Tet_Tc0</name>
+      </caplfunction>
+    </testcase>
+  </testfixture>
+</testtree>

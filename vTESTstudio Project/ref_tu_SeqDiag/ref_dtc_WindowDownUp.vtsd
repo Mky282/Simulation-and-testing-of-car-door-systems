@@ -1,0 +1,213 @@
+<TestSequenceDiagram version="1.3" breakOnFailure="true" tcAnUseId="false" tcId="11d806e4-5d08-44bc-9229-54ac1562980d" xmlns="http://www.vector-informatik.de/ITE/TDE/TestSequenceDiagram">
+  <Elements>
+    <Start id="5005b288-408c-429d-aecf-256833bb0d8d" x="112" y="36.8" />
+    <DiagramLink id="304710ae-27d8-4fcc-8676-6524ec201a3e" descr="Preconditions" x="112" y="89.6">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <linkcommand>
+          <diagramlink>
+            <title />
+            <diagram>9skhac3p5k03</diagram>
+          </diagramlink>
+        </linkcommand>
+      </testdiagramnode>
+    </DiagramLink>
+    <ForLoop id="8a533ae2-3ccc-444c-8b0c-391c376af266" descr="For Loop" x="36.8" y="194.2" width="212.8" height="151.2" condition="For count=1..15, increment=1">
+      <testdiagramnode version="21" minRequiredVersion="18" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <forcommand>
+          <for>
+            <title />
+            <loopvar>count</loopvar>
+            <loopvartype>int64</loopvartype>
+            <startvalue>
+              <const>1</const>
+            </startvalue>
+            <stopvalue>
+              <const>15</const>
+            </stopvalue>
+            <increment>
+              <const>1</const>
+            </increment>
+          </for>
+        </forcommand>
+      </testdiagramnode>
+      <Check id="78c8289f-6d49-484c-b34a-0e835db7fdef" descr="No Command" x="78.4" y="208" width="96" height="24" />
+      <Check id="0e02d411-9bbf-4035-8fe2-73ed8678f2e2" descr="Check Window Position" x="80" y="253.6" width="96" height="24">
+        <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+          <sequencecommand>
+            <awaitvaluematch>
+              <title />
+              <timeout>
+                <value>
+                  <const>100</const>
+                </value>
+                <unit>ms</unit>
+              </timeout>
+              <compare>
+                <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|WindowState|4|False|END_OF_OBJECT_FrameData|WindowPosition|1|END_OF_OBJECT_|</dbobject>
+                <eq>
+                  <variable>count</variable>
+                </eq>
+              </compare>
+            </awaitvaluematch>
+          </sequencecommand>
+        </testdiagramnode>
+      </Check>
+      <Check id="b5bd27e1-c8bf-424a-b9ed-b5950a6d724f" descr="No Command" x="81.6" y="300" width="96" height="24" />
+    </ForLoop>
+    <ForLoop id="75741557-922e-4ff9-bd01-d19ae76ea91f" descr="For Loop" x="39.2" y="420" width="212.8" height="151.2" condition="For count=14..0, increment=-1">
+      <testdiagramnode version="21" minRequiredVersion="18" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <forcommand>
+          <for>
+            <title />
+            <loopvar>count</loopvar>
+            <loopvartype>int64</loopvartype>
+            <startvalue>
+              <const>14</const>
+            </startvalue>
+            <stopvalue>
+              <const>0</const>
+            </stopvalue>
+            <increment>
+              <const>-1</const>
+            </increment>
+          </for>
+        </forcommand>
+      </testdiagramnode>
+      <Check id="c7436caa-42da-4364-98db-0b179485bd26" descr="No Command" x="80.8" y="433.8" width="96" height="24" />
+      <Check id="4f212dc7-cdb6-47f2-9f09-e2cf9087294b" descr="Check Window Position" x="82.4" y="479.4" width="96" height="24">
+        <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+          <sequencecommand>
+            <awaitvaluematch>
+              <title />
+              <timeout>
+                <value>
+                  <const>100</const>
+                </value>
+                <unit>ms</unit>
+              </timeout>
+              <compare>
+                <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|WindowState|4|False|END_OF_OBJECT_FrameData|WindowPosition|1|END_OF_OBJECT_|</dbobject>
+                <eq>
+                  <variable>count</variable>
+                </eq>
+              </compare>
+            </awaitvaluematch>
+          </sequencecommand>
+        </testdiagramnode>
+      </Check>
+      <Check id="e0c6ed9a-b50e-4985-b238-978d73a768d0" descr="No Command" x="84" y="525.8" width="96" height="24" />
+    </ForLoop>
+    <DiagramLink id="e2f5a51e-270d-4f0f-9972-8ea7481bde80" descr="Postconditions" x="126.4" y="612">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <linkcommand>
+          <diagramlink>
+            <title />
+            <diagram>lfmmr74fb1a0</diagram>
+          </diagramlink>
+        </linkcommand>
+      </testdiagramnode>
+    </DiagramLink>
+    <Finalize id="1129f0ee-a9d5-4cca-a22a-1f5625330dfe" x="157.6" y="697.2" />
+  </Elements>
+  <Links>
+    <Transition id="5a49b83b-743c-496d-ab9a-fda90ee245e5" x="129.2" y="65.6" from="5005b288-408c-429d-aecf-256833bb0d8d" to="304710ae-27d8-4fcc-8676-6524ec201a3e" fromPort="StartPort" toPort="StartPort" />
+    <Transition id="26e7e13f-5339-4a6d-9aa3-6869201c5c20" x="130" y="124.8" from="304710ae-27d8-4fcc-8676-6524ec201a3e" to="8a533ae2-3ccc-444c-8b0c-391c376af266" fromPort="StartPort" toPort="LoopPort" />
+    <Transition id="ad8c6d01-514d-475b-b34a-b2f466ac6192" descr="Roll Down Request" x="127.2" y="232" from="78c8289f-6d49-484c-b34a-0e835db7fdef" to="0e02d411-9bbf-4035-8fe2-73ed8678f2e2" fromPort="CheckPort" toPort="CheckPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>Roll_Down</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="e90ef076-623f-41b4-a4f7-2b77c5506fb2" descr="No Request" x="128.8" y="277.6" from="0e02d411-9bbf-4035-8fe2-73ed8678f2e2" to="b5bd27e1-c8bf-424a-b9ed-b5950a6d724f" fromPort="CheckPort" toPort="CheckPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>No_Request</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+          <wait>
+            <title />
+            <time>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </time>
+          </wait>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="260b67e7-3780-4744-a579-7a6816aa40b4" descr="Roll Up Request" x="129.6" y="457.8" from="c7436caa-42da-4364-98db-0b179485bd26" to="4f212dc7-cdb6-47f2-9f09-e2cf9087294b" fromPort="CheckPort" toPort="CheckPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>Roll_Up</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="a4a60f9b-c7fe-4862-b56a-9a19e8161992" descr="No Request" x="131.2" y="503.4" from="4f212dc7-cdb6-47f2-9f09-e2cf9087294b" to="e0c6ed9a-b50e-4985-b238-978d73a768d0" fromPort="CheckPort" toPort="CheckPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>No_Request</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+          <wait>
+            <title />
+            <time>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </time>
+          </wait>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="c5d80339-1877-4686-82cb-43134b3505ea" x="144.4" y="346.2" from="8a533ae2-3ccc-444c-8b0c-391c376af266" to="75741557-922e-4ff9-bd01-d19ae76ea91f" fromPort="LoopPort" toPort="LoopPort" />
+    <Transition id="e4fb2230-f082-4d99-aeaa-7644267a3ced" x="144.4" y="572" from="75741557-922e-4ff9-bd01-d19ae76ea91f" to="e2f5a51e-270d-4f0f-9972-8ea7481bde80" fromPort="LoopPort" toPort="StartPort" />
+    <Transition id="9aae9a56-d9cb-4315-8f0b-454e95f693d0" x="160" y="647.2" from="e2f5a51e-270d-4f0f-9972-8ea7481bde80" to="1129f0ee-a9d5-4cca-a22a-1f5625330dfe" fromPort="StartPort" toPort="FinishPort" />
+  </Links>
+</TestSequenceDiagram>

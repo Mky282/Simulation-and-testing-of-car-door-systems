@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Manifest>
+  <FileFormatVersion>1</FileFormatVersion>
+  <TestUnitName>ref_tu_CSharp</TestUnitName>
+  <TestUnitUri>vtso://m8dh3u5eobov/51lgbuujqsqu</TestUnitUri>
+  <TsoProject>D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_testVTS.vtsoproj</TsoProject>
+  <TsoProjectRelative>.\..\vTESTstudio Project\ref_testVTS.vtsoproj</TsoProjectRelative>
+  <ProjectGuid>m8dh3u5eobov</ProjectGuid>
+  <EditableSources>false</EditableSources>
+  <ContainsVsDll>false</ContainsVsDll>
+  <GlobalSysVarTypeLibBinary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="m8dh3u5eobov_cfg_sysvars.dll" /&gt;</GlobalSysVarTypeLibBinary>
+  <TestSysVarTypeLibBinary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="m8dh3u5eobov_TestSysVars.dll" /&gt;</TestSysVarTypeLibBinary>
+  <COTypeLibBinary></COTypeLibBinary>
+  <UserCaplExportTableHash>0</UserCaplExportTableHash>
+  <BuildInfo>
+    <CaplCompiler>13.0.117.0</CaplCompiler>
+    <MinRequiredCANoeVersion>8.2.64</MinRequiredCANoeVersion>
+    <TsoVersion>5.0.104.0</TsoVersion>
+    <NetApiVersion>13.0.117.0</NetApiVersion>
+  </BuildInfo>
+  <NetTypeLibGenerator>
+    <NamespaceGeneration>NoNamespace</NamespaceGeneration>
+    <NetTypeLibs />
+  </NetTypeLibGenerator>
+  <VariantProperties />
+  <Sources>
+    <CaplFiles>
+      <CaplTypeLibBinary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="51lgbuujqsqu_CA.dll" /&gt;</CaplTypeLibBinary>
+    </CaplFiles>
+    <CaplIncludeFiles />
+    <NetFiles>
+      <NetFile>
+        <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_NET_FuncTests.cs" /&gt;</Source>
+      </NetFile>
+      <Binary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_tu_CSharp.dll" /&gt;</Binary>
+      <ExportTable>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__ExpTbl_\ref_tu_CSharp_CS.export.xml" /&gt;</ExportTable>
+    </NetFiles>
+    <NetBinaries />
+    <VttFiles>
+      <VttFile>
+        <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_tt_NET_FuncTests.vtt" /&gt;</Source>
+        <Binary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_tt_NET_FuncTests.vxtx" /&gt;</Binary>
+        <CaplFile>
+          <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_tt_NET_FuncTests.vxtx.can" /&gt;</Source>
+          <Binary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_tt_NET_FuncTests.vxtx.cbf" /&gt;</Binary>
+        </CaplFile>
+        <ExportTable>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__ExpTbl_\ref_tt_NET_FuncTests.vtt.export.xml" /&gt;</ExportTable>
+      </VttFile>
+    </VttFiles>
+    <ParameterFiles>
+      <ParamDbTypeLibBinary>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="51lgbuujqsqu_PA.dll" /&gt;</ParamDbTypeLibBinary>
+    </ParameterFiles>
+    <WaveformFiles />
+    <WaveformBinaries />
+    <CaplDlls />
+  </Sources>
+  <TestSysVar>
+    <Source>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</Source>
+  </TestSysVar>
+  <ExternalReferences />
+  <SutEnvironment>
+    <Networks>
+      <Network>
+        <Name>CAN</Name>
+        <ChannelType>CAN</ChannelType>
+        <Databases>
+          <Database>
+            <DatabaseFile>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\..\DBC\ref_testTFS.dbc" /&gt;</DatabaseFile>
+            <DatabaseName>ref_testTFS</DatabaseName>
+            <OpenInfoString>*17*AFDXPDUMode*0*ASRNamesSuffixMode*1*ASRNormalizeTimings*0*ASRPDULayerMode*0*ASRShortNameUsage*0*ASRTextTableNamingMode*0*CalculateUpdateBit*0*DatabaseFile*D:\vTESTstudio Tutorial\ref_testTFS\DBC\ref_testTFS.dbc*DoNormalization*1*EncodingForNETStringConversions*0*FilterUnrecognizedNodes*0*FlexRayABMode*0*FlexRayPostfixOption*0*IgnoredNodes**IsConvertedLinDbc*0*IsLDFEditorMode*0*LanguageCode**LinChannelPostfix*1*NetworkName**NetworkType*0</OpenInfoString>
+          </Database>
+        </Databases>
+      </Network>
+    </Networks>
+    <UseAllNetworks>false</UseAllNetworks>
+  </SutEnvironment>
+  <TUProperties>
+    <Caption></Caption>
+    <Description></Description>
+    <Version></Version>
+    <PreBuildEvent></PreBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
+    <TestDesigners>
+      <Columns />
+      <TestDesignerEntries />
+    </TestDesigners>
+    <TUInfos />
+  </TUProperties>
+  <NodeLayerDlls>
+    <NodeLayerDll>
+      <Path>CANstress_NL.dll</Path>
+      <TsoPath base="app">CANstress_NL.dll</TsoPath>
+    </NodeLayerDll>
+    <NodeLayerDll>
+      <Path>FRStressNL.dll</Path>
+      <TsoPath base="app">FRStressNL.dll</TsoPath>
+    </NodeLayerDll>
+    <NodeLayerDll>
+      <Path>J1939TestServiceLibraryNL.dll</Path>
+      <TsoPath base="app">J1939TestServiceLibraryNL.dll</TsoPath>
+    </NodeLayerDll>
+    <NodeLayerDll>
+      <Path>C2X_IL.dll</Path>
+      <TsoPath base="app">C2X_IL.dll</TsoPath>
+    </NodeLayerDll>
+  </NodeLayerDlls>
+  <UserFiles />
+  <TetEntries>
+    <TetEntry>
+      <Type>vtt</Type>
+      <Identifier>ref_tt_NET_FuncTests.vtt</Identifier>
+    </TetEntry>
+  </TetEntries>
+</Manifest>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testtree>
+  <title></title>
+  <version>1</version>
+  <caplfunction>
+    <name>Ttsufrhkr_Tet_TtInit</name>
+  </caplfunction>
+  <testfixture>
+    <title>Test Fixture</title>
+    <navid>b330f215-bcab-4c0e-930f-45b834a53a70</navid>
+    <preparation>
+      <title></title>
+      <caplfunction>
+        <name>Ttsufrhkr_Tet_Tf_Preparation0</name>
+      </caplfunction>
+    </preparation>
+    <testcase>
+      <title>ctc_WindowDownUp ()</title>
+      <testcaseid>4fcce2ca-2d34-440c-9003-3c9f67b232a9</testcaseid>
+      <caplfunction>
+        <name>Ttsufrhkr_Tet_CaplTcCall0</name>
+      </caplfunction>
+    </testcase>
+    <testcase>
+      <title>ctc_RequestLock ()</title>
+      <testcaseid>1dee3287-c609-484b-bbfa-7b7129712b51</testcaseid>
+      <caplfunction>
+        <name>Ttsufrhkr_Tet_CaplTcCall1</name>
+      </caplfunction>
+    </testcase>
+    <testcase>
+      <title>ctc_AutoLock ()</title>
+      <testcaseid>0b001600-4cee-42ab-bbc3-c06977fa3b75</testcaseid>
+      <caplfunction>
+        <name>Ttsufrhkr_Tet_CaplTcCall2</name>
+      </caplfunction>
+    </testcase>
+  </testfixture>
+</testtree>

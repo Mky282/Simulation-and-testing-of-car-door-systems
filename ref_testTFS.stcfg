@@ -1,0 +1,9 @@
+[NStatePersistence]
+Signature=VectorStatePersistence
+[VGlobalMeasurementIndex]
+mMeasurementIndex=53
+[VTestConfigurationConfigData]
+Functional_Tests_NextTestRun=5
+[VTestExecutable]
+Functional_Tests_LastReportFile=Test Reports\Report_Functional_Tests.vtestreport
+Functional_Tests_LastReportTmpFile=rpt367C.vtestreport

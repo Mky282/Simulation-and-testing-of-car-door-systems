@@ -1,0 +1,517 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TempFileMetainfo xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/Vector.ITE.TempFileRepository.MetainfoModel">
+  <FileFormatVersion xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework">1</FileFormatVersion>
+  <TempFileMetainfo xmlns:d2p1="http://schemas.datacontract.org/2004/07/Vector.ITE.TempFileRepository.MetainfoModel.Entities" z:Id="2">
+    <_p z:Ref="1" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework" />
+    <d2p1:FileSources z:Id="3">
+      <Content z:Id="4" z:Size="35" xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework">
+        <d2p1:FileSource z:Id="5" i:type="d2p1:SimpleFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Id="6"></d2p1:AppVersion>
+          <d2p1:Extension z:Id="7">.vvarprop</d2p1:Extension>
+          <d2p1:GeneratedFileModificationTime>0001-01-01T00:00:00</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>-1</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="8">4jagqlv6ne37=VP</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescription i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="9" i:type="d2p1:SimpleFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="6" i:nil="true" />
+          <d2p1:Extension z:Ref="7" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>0001-01-01T00:00:00</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>-1</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="10">ens84o95nngs=VP</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescription i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="11" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Id="12">3.0.55.0</d2p1:AppVersion>
+          <d2p1:Extension z:Id="13">.</d2p1:Extension>
+          <d2p1:GeneratedFileModificationTime>2020-06-18T09:38:42.3495368+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>70</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="14">epjm5jnabrha-TSV</d2p1:PersistencyKey>
+          <d2p1:Crc>2380691147</d2p1:Crc>
+          <d2p1:SourceFile z:Id="15">D:\vTestStudio Tutorial\ref_testTFS\vTestStudio Project\ref_testVTS.vtsoproj</d2p1:SourceFile>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="16" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="12" i:nil="true" />
+          <d2p1:Extension z:Ref="13" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-06-18T09:38:42.362502+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>74</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="17">epjm5jnabrha-MTSV</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="18">
+            <Content z:Id="19" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="20">
+                <_p z:Ref="18" i:nil="true" />
+                <d2p1:FullFilePath z:Id="21">D:\vTestStudio Tutorial\ref_testTFS\vTestStudio Project\obj_ref_testVTS\epjm5jnabrha-TSV.</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-06-18T09:38:42.3495368+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="16" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="22" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="12" i:nil="true" />
+          <d2p1:Extension z:Ref="13" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-06-18T09:38:42.4033909+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>76423</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="23">hvaku51hridp-CSV</d2p1:PersistencyKey>
+          <d2p1:Crc>350706319</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="15" i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="24" i:type="d2p1:DatabaseTlbFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="6" i:nil="true" />
+          <d2p1:Extension z:Ref="13" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>0001-01-01T00:00:00</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>-1</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="25">fr78i3l1osrn#DB</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescription i:nil="true" />
+          <d2p1:IgnoredNodes z:Ref="6" i:nil="true" />
+          <d2p1:NamespaceMode>0</d2p1:NamespaceMode>
+          <d2p1:Networks xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="26" z:Size="0" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="27" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="12" i:nil="true" />
+          <d2p1:Extension z:Ref="13" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-06-18T09:38:42.9419377+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>60</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="28">4jagqlv6ne37~0-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="29">
+            <Content z:Id="30" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="31">
+                <_p z:Ref="29" i:nil="true" />
+                <d2p1:FullFilePath z:Id="32">D:\vTestStudio Tutorial\ref_testTFS\vTestStudio Project\TU_CAPL\CAPL_Test_File.can</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-05-27T21:27:41.1169725+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="27" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="33" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="12" i:nil="true" />
+          <d2p1:Extension z:Ref="13" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-06-18T09:38:43.206224+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>60</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="34">4jagqlv6ne37~3-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="35">
+            <Content z:Id="36" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="37">
+                <_p z:Ref="35" i:nil="true" />
+                <d2p1:FullFilePath z:Id="38">D:\vTestStudio Tutorial\ref_testTFS\vTestStudio Project\TU_CAPL\CAPL_Test_Steps.vtt</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-06-17T09:45:25.8241985+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="33" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="39" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="12" i:nil="true" />
+          <d2p1:Extension z:Ref="13" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-06-18T09:38:43.999084+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>3584</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="40">epjm5jnabrha#SV</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="41">
+            <Content z:Id="42" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="43">
+                <_p z:Ref="41" i:nil="true" />
+                <d2p1:FullFilePath z:Id="44">D:\vTestStudio Tutorial\ref_testTFS\vTestStudio Project\obj_ref_testVTS\epjm5jnabrha-MTSV</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-06-18T09:38:42.362502+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="39" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="45" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="12" i:nil="true" />
+          <d2p1:Extension z:Ref="13" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-06-18T09:38:44.1865757+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>17920</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="46">hvaku51hridp#SV</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="47">
+            <Content z:Id="48" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="49">
+                <_p z:Ref="47" i:nil="true" />
+                <d2p1:FullFilePath z:Id="50">D:\vTestStudio Tutorial\ref_testTFS\vTestStudio Project\obj_ref_testVTS\hvaku51hridp-CSV</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-06-18T09:38:42.4033909+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="45" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="51" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Id="52">5.0.104.0</d2p1:AppVersion>
+          <d2p1:Extension z:Id="53">.</d2p1:Extension>
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:36.2773803+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>70</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="54">ag8tr8elp0ju-TSV</d2p1:PersistencyKey>
+          <d2p1:Crc>2380691147</d2p1:Crc>
+          <d2p1:SourceFile z:Id="55">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_testVTS.vtsoproj</d2p1:SourceFile>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="56" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="53" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:36.2983248+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>74</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="57">ag8tr8elp0ju-MTSV</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="58">
+            <Content z:Id="59" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="60">
+                <_p z:Ref="58" i:nil="true" />
+                <d2p1:FullFilePath z:Id="61">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\ag8tr8elp0ju-TSV.</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-10-08T13:25:36.2773803+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="56" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="62" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Id="63">5.0.104.0</d2p1:AppVersion>
+          <d2p1:Extension z:Id="64">.vvarprop</d2p1:Extension>
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:18:28.3479746+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>266</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="65">TU_Indep=VP</d2p1:PersistencyKey>
+          <d2p1:Crc>3110147276</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="6" i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="66" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="53" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:47.9949545+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>3584</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="67">ag8tr8elp0ju#SV</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="68">
+            <Content z:Id="69" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="70">
+                <_p z:Ref="68" i:nil="true" />
+                <d2p1:FullFilePath z:Id="71">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\ag8tr8elp0ju-MTSV</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-10-08T13:25:36.2983248+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="66" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="72" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="63" i:nil="true" />
+          <d2p1:Extension z:Ref="64" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:18:28.3729193+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>266</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="73">k9cm138jnn1b=VP</d2p1:PersistencyKey>
+          <d2p1:Crc>3110147276</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="6" i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="74" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="53" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:36.7471208+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>2300</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="75">k9cm138jnn1b~0-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="76">
+            <Content z:Id="77" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="78">
+                <_p z:Ref="76" i:nil="true" />
+                <d2p1:FullFilePath z:Id="79">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CAPL\ref_CAPL_FuncTests.can</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-10-08T13:18:44.4391263+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="74" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="80" i:type="d2p1:DatabaseTlbFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="53" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:37.2846799+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>15872</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="81">m414iqk846t0#DB</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescription z:Id="82">
+            <_p z:Ref="80" i:nil="true" />
+            <d2p1:FullFilePath z:Id="83">D:\vTESTstudio Tutorial\ref_testTFS\DBC\ref_testTFS.dbc</d2p1:FullFilePath>
+            <d2p1:SourceModificationTime>2020-06-22T16:03:18.6993146+05:30</d2p1:SourceModificationTime>
+          </d2p1:FileSourceDescription>
+          <d2p1:IgnoredNodes z:Ref="6" i:nil="true" />
+          <d2p1:NamespaceMode>0</d2p1:NamespaceMode>
+          <d2p1:Networks xmlns:d6p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" z:Id="84" z:Size="1">
+            <d6p1:string z:Id="85">CAN</d6p1:string>
+          </d2p1:Networks>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="86" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="53" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:47.8762732+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>17920</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="87">4mg736j7eqq9#SV</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="88">
+            <Content z:Id="89" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="90">
+                <_p z:Ref="88" i:nil="true" />
+                <d2p1:FullFilePath z:Id="91">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\4mg736j7eqq9-CSV</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-10-08T13:25:36.3232579+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="86" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="92" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="6" i:nil="true" />
+          <d2p1:Extension z:Ref="53" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>0001-01-01T00:00:00</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>-1</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="93">k9cm138jnn1b~0-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="94" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="6" i:nil="true" />
+          <d2p1:Extension z:Id="95">.</d2p1:Extension>
+          <d2p1:GeneratedFileModificationTime>0001-01-01T00:00:00</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>-1</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="96">k9cm138jnn1b~0-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="97" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="6" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>0001-01-01T00:00:00</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>-1</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="98">k9cm138jnn1b~0-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="99" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="6" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>0001-01-01T00:00:00</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>-1</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="100">k9cm138jnn1b~0-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="101" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:36.3232579+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>8141</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="102">4mg736j7eqq9-CSV</d2p1:PersistencyKey>
+          <d2p1:Crc>1932196705</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="55" i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="103" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Id="104">5.0.104.0</d2p1:AppVersion>
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:04:29.8826279+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>34</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="105">ju8d8ktlp6u0-EPF</d2p1:PersistencyKey>
+          <d2p1:Crc>817826664</d2p1:Crc>
+          <d2p1:SourceFile z:Id="106">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_testVTS.vtsoproj</d2p1:SourceFile>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="107" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="6" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>0001-01-01T00:00:00</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>-1</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="108">k9cm138jnn1b~0-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="109" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:36.8219207+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>60</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="110">k9cm138jnn1b~3-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="111">
+            <Content z:Id="112" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="113">
+                <_p z:Ref="111" i:nil="true" />
+                <d2p1:FullFilePath z:Id="114">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CAPL\ref_tt_CAPL_FuncTests.vtt</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-06-22T18:08:22.1364552+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="109" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="115" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="63" i:nil="true" />
+          <d2p1:Extension z:Id="116">.vvarprop</d2p1:Extension>
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:18:28.3749016+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>266</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="117">51lgbuujqsqu=VP</d2p1:PersistencyKey>
+          <d2p1:Crc>3110147276</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="6" i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="118" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:37.4921309+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>3584</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="119">51lgbuujqsqu#PA</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="120">
+            <Content z:Id="121" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="122">
+                <_p z:Ref="120" i:nil="true" />
+                <d2p1:FullFilePath z:Id="123">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\51lgbuujqsqu=VP.vvarprop</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-10-08T13:18:28.3749016+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="118" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="124" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:38.9432309+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>2619</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="125">51lgbuujqsqu~1-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="126">
+            <Content z:Id="127" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="128">
+                <_p z:Ref="126" i:nil="true" />
+                <d2p1:FullFilePath z:Id="129">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-10-08T13:19:19.1438602+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="124" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="130" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:36.8418674+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>60</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="131">51lgbuujqsqu~3-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="132">
+            <Content z:Id="133" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="134">
+                <_p z:Ref="132" i:nil="true" />
+                <d2p1:FullFilePath z:Id="135">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_tt_NET_FuncTests.vtt</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-06-22T18:13:42.7560646+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="130" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="136" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="63" i:nil="true" />
+          <d2p1:Extension z:Ref="116" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:18:28.3758986+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>266</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="137">32oi2uk89d5o=VP</d2p1:PersistencyKey>
+          <d2p1:Crc>3110147276</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="6" i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="138" i:type="d2p1:MultiFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="52" i:nil="true" />
+          <d2p1:Extension z:Ref="95" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:25:36.8757762+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>1998</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="139">32oi2uk89d5o~3-0</d2p1:PersistencyKey>
+          <d2p1:FileSourceDescriptions z:Id="140">
+            <Content z:Id="141" z:Size="1">
+              <d2p1:FileSourceDescription z:Id="142">
+                <_p z:Ref="140" i:nil="true" />
+                <d2p1:FullFilePath z:Id="143">D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_TestTable\ref_tt_TestTable_FuncTests.vtt</d2p1:FullFilePath>
+                <d2p1:SourceModificationTime>2020-10-08T13:19:39.2882271+05:30</d2p1:SourceModificationTime>
+              </d2p1:FileSourceDescription>
+            </Content>
+            <_p z:Ref="138" i:nil="true" />
+          </d2p1:FileSourceDescriptions>
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="144" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Id="145">5.0.104.0</d2p1:AppVersion>
+          <d2p1:Extension z:Id="146">.vvarprop</d2p1:Extension>
+          <d2p1:GeneratedFileModificationTime>2020-06-25T11:01:02.1873016+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>266</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="147">f1r5rmoio2na=VP</d2p1:PersistencyKey>
+          <d2p1:Crc>3110147276</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="6" i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="148" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="145" i:nil="true" />
+          <d2p1:Extension z:Ref="146" i:nil="true" />
+          <d2p1:GeneratedFileModificationTime>2020-06-25T11:01:17.3643456+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>266</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="149">k3age7m6bdb0=VP</d2p1:PersistencyKey>
+          <d2p1:Crc>3110147276</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="6" i:nil="true" />
+        </d2p1:FileSource>
+        <d2p1:FileSource z:Id="150" i:type="d2p1:CrcBasedFileSource">
+          <_p z:Ref="3" i:nil="true" />
+          <d2p1:AppVersion z:Ref="63" i:nil="true" />
+          <d2p1:Extension z:Id="151">.vvarprop</d2p1:Extension>
+          <d2p1:GeneratedFileModificationTime>2020-10-08T13:18:28.3788896+05:30</d2p1:GeneratedFileModificationTime>
+          <d2p1:GeneratedFileSize>266</d2p1:GeneratedFileSize>
+          <d2p1:PersistencyKey z:Id="152">hgv8475tults=VP</d2p1:PersistencyKey>
+          <d2p1:Crc>3110147276</d2p1:Crc>
+          <d2p1:SourceFile z:Ref="6" i:nil="true" />
+        </d2p1:FileSource>
+      </Content>
+      <_p z:Ref="2" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework" />
+    </d2p1:FileSources>
+    <d2p1:TempFileMappings z:Id="153">
+      <Content z:Id="154" z:Size="7" xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework">
+        <d2p1:TempFileMapping z:Id="155">
+          <_p z:Ref="153" i:nil="true" />
+          <d2p1:FileSource z:Ref="24" i:nil="true" />
+          <d2p1:MappingValue z:Id="156">testTFS</d2p1:MappingValue>
+        </d2p1:TempFileMapping>
+        <d2p1:TempFileMapping z:Id="157">
+          <_p z:Ref="153" i:nil="true" />
+          <d2p1:FileSource z:Ref="39" i:nil="true" />
+          <d2p1:MappingValue z:Id="158">i1c8s89jf939_TestSysVars</d2p1:MappingValue>
+        </d2p1:TempFileMapping>
+        <d2p1:TempFileMapping z:Id="159">
+          <_p z:Ref="153" i:nil="true" />
+          <d2p1:FileSource z:Ref="45" i:nil="true" />
+          <d2p1:MappingValue z:Id="160">i1c8s89jf939_cfg_sysvars</d2p1:MappingValue>
+        </d2p1:TempFileMapping>
+        <d2p1:TempFileMapping z:Id="161">
+          <_p z:Ref="153" i:nil="true" />
+          <d2p1:FileSource z:Ref="66" i:nil="true" />
+          <d2p1:MappingValue z:Id="162">m8dh3u5eobov_TestSysVars</d2p1:MappingValue>
+        </d2p1:TempFileMapping>
+        <d2p1:TempFileMapping z:Id="163">
+          <_p z:Ref="153" i:nil="true" />
+          <d2p1:FileSource z:Ref="80" i:nil="true" />
+          <d2p1:MappingValue z:Id="164">ref_testTFS</d2p1:MappingValue>
+        </d2p1:TempFileMapping>
+        <d2p1:TempFileMapping z:Id="165">
+          <_p z:Ref="153" i:nil="true" />
+          <d2p1:FileSource z:Ref="86" i:nil="true" />
+          <d2p1:MappingValue z:Id="166">m8dh3u5eobov_cfg_sysvars</d2p1:MappingValue>
+        </d2p1:TempFileMapping>
+        <d2p1:TempFileMapping z:Id="167">
+          <_p z:Ref="153" i:nil="true" />
+          <d2p1:FileSource z:Ref="118" i:nil="true" />
+          <d2p1:MappingValue z:Id="168">51lgbuujqsqu_PA</d2p1:MappingValue>
+        </d2p1:TempFileMapping>
+      </Content>
+      <_p z:Ref="2" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/Vector.Reusable.ModelFramework" />
+    </d2p1:TempFileMappings>
+  </TempFileMetainfo>
+</TempFileMetainfo>

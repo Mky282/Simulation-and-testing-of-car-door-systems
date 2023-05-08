@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<systemvariables version="4">
+  <namespace name="" comment="" interface="">
+    <namespace name="testNS" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="IgnitionStart" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1">
+        <valuetable name="Custom" definesMinMax="false">
+          <valuetableentry value="0" lowerBound="0" upperBound="0" description="Ign_OFF" displayString="Ign_OFF" />
+          <valuetableentry value="1" lowerBound="1" upperBound="1" description="Ign_ON" displayString="Ign_ON" />
+        </valuetable>
+      </variable>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="WindowState" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="15" maxValuePhys="15" />
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="WindowRequest" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="2" maxValuePhys="2">
+        <valuetable name="Custom" definesMinMax="false">
+          <valuetableentry value="0" lowerBound="0" upperBound="0" description="No_Request" displayString="No_Request" />
+          <valuetableentry value="1" lowerBound="1" upperBound="1" description="Roll_Up" displayString="Roll_Up" />
+          <valuetableentry value="2" lowerBound="2" upperBound="2" description="Roll_Down" displayString="Roll_Down" />
+        </valuetable>
+      </variable>
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="kmph" name="Velocity" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="200" maxValuePhys="200" />
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" name="LockRq" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" startValue="0" minValue="0" minValuePhys="0" maxValue="1" maxValuePhys="1">
+        <valuetable name="Custom" definesMinMax="false">
+          <valuetableentry value="0" lowerBound="0" upperBound="0" description="RqToLock" displayString="RqToLock" />
+          <valuetableentry value="1" lowerBound="1" upperBound="1" description="RqToUnlock" displayString="RqToUnlock" />
+        </valuetable>
+      </variable>
+    </namespace>
+    <namespace name="CANoe" comment="" interface="">
+      <variable anlyzLocal="2" readOnly="false" valueSequence="false" unit="" separateTransmissions="true" name="UnknownSysVar" comment="Name of the system variable that could not be updated (not defined)" bitcount="0" isSigned="true" encoding="65001" type="string" />
+    </namespace>
+    <namespace name="_Statistics" comment="" interface="">
+      <namespace name="CAN1" comment="Bus Statistic Variables for Channel CAN1" interface="">
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="TransceiverErrors" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="%" name="BusloadMin" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" maxValue="100" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="" name="FramesPerBurst" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="ChipStateRxErr" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="ChipStateTxErr" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="" name="ChipState" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" maxValue="4" maxValuePhys="4">
+          <valuetable name="" definesMinMax="true">
+            <valuetableentry value="0" lowerBound="0" upperBound="0" description="Active" displayString="Active" />
+            <valuetableentry value="1" lowerBound="1" upperBound="1" description="Passive" displayString="Passive" />
+            <valuetableentry value="2" lowerBound="2" upperBound="2" description="Off" displayString="Off" />
+            <valuetableentry value="3" lowerBound="3" upperBound="3" description="Warning" displayString="Warning" />
+            <valuetableentry value="4" lowerBound="4" upperBound="4" description="Simulated" displayString="Simulated" />
+          </valuetable>
+        </variable>
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="ms" name="MinSendDist" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="%" name="BusloadAvg" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" maxValue="100" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="fr/s" name="ErrorFrameRate" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="ErrorFrames" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="%" name="BusloadMax" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" maxValue="100" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="fr/s" name="StdRemoteRate" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="fr/s" name="ExtDataRate" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="StdRemote" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="ExtData" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="ms" name="BurstTime" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="fr/s" name="StdDataRate" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="ExtRemote" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="fr/s" name="ExtRemoteRate" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="Bursts" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="total" name="StdData" comment="" bitcount="32" isSigned="true" encoding="65001" type="int" minValue="0" minValuePhys="0" />
+        <variable anlyzLocal="1" readOnly="true" valueSequence="false" unit="%" name="Busload" comment="" bitcount="64" isSigned="true" encoding="65001" type="float" minValue="0" maxValue="100" />
+      </namespace>
+    </namespace>
+  </namespace>
+</systemvariables>

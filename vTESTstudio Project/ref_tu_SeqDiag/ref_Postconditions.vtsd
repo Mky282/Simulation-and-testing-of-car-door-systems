@@ -1,0 +1,36 @@
+<TestSequenceDiagram version="1.3" breakOnFailure="true" tcAnUseId="false" tcId="e04cae7a-f645-43d0-9286-29bac5d58506" xmlns="http://www.vector-informatik.de/ITE/TDE/TestSequenceDiagram">
+  <Elements>
+    <Start id="5005b288-408c-429d-aecf-256833bb0d8d" x="156.8" y="43.2" />
+    <Finalize id="1129f0ee-a9d5-4cca-a22a-1f5625330dfe" x="157.6" y="176" />
+  </Elements>
+  <Links>
+    <Transition id="795f3716-fa2f-46a7-89b8-14346c9f14fa" x="174.4" y="72" from="5005b288-408c-429d-aecf-256833bb0d8d" to="1129f0ee-a9d5-4cca-a22a-1f5625330dfe" fromPort="StartPort" toPort="FinishPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|IgnitionStart|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>Ign_OFF</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+          <wait>
+            <title />
+            <time>
+              <value>
+                <const>500</const>
+              </value>
+              <unit>ms</unit>
+            </time>
+          </wait>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+  </Links>
+</TestSequenceDiagram>

@@ -1,0 +1,30 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message LockingRq LkCtrlRq;
+  message WindowRq WindowCtrl;
+}
+
+on sysvar_update sysvar::testNS::LockRq
+{
+  if(@sysvar::testNS::LockRq) LkCtrlRq.LockRequest = 1; // Request Unlock Doors
+  else LkCtrlRq.LockRequest = 0; // Request Lock Doors
+  output(LkCtrlRq); // Outputs message onto the bus
+}
+
+on sysvar_update sysvar::testNS::WindowRequest
+{
+  WindowCtrl.WindowRequest = @sysvar::testNS::WindowRequest;
+  output(WindowCtrl); // Outputs message onto the bus
+}
+
+on message WindowState
+{
+  @sysvar::testNS::WindowState = this.WindowPosition;
+}
+

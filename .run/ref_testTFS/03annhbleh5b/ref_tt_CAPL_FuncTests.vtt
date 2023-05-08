@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Vector Test Table Editor-->
+<ttroot version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+  <tt>
+    <tf navid="b330f215-bcab-4c0e-930f-45b834a53a70">
+      <title />
+      <preparation>
+        <title />
+        <caplfunction>
+          <title />
+          <name>cf_testPreparation</name>
+        </caplfunction>
+      </preparation>
+      <capltestcase>
+        <title />
+        <name>ctc_WindowDownUp</name>
+        <tcid>4fcce2ca-2d34-440c-9003-3c9f67b232a9</tcid>
+      </capltestcase>
+      <capltestcase>
+        <title />
+        <name>ctc_RequestLock</name>
+        <tcid>1dee3287-c609-484b-bbfa-7b7129712b51</tcid>
+      </capltestcase>
+      <capltestcase>
+        <title />
+        <name>ctc_AutoLock</name>
+        <tcid>0b001600-4cee-42ab-bbc3-c06977fa3b75</tcid>
+      </capltestcase>
+    </tf>
+  </tt>
+  <ttlib>
+    <ts_definitions />
+    <tc_definitions />
+    <function_definitions />
+  </ttlib>
+</ttroot>

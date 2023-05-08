@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testtree>
+  <title></title>
+  <version>1</version>
+  <caplfunction>
+    <name>Tthi22248_Tet_TtInit</name>
+  </caplfunction>
+  <testfixture>
+    <title>ref_dtc_RequestLock</title>
+    <navid>d8b017e7-3c3d-4042-a604-d371ae15b736</navid>
+    <testcase>
+      <title>Test Case 1</title>
+      <testcaseid>483477e6-f28f-de67-641c-c49b0ce0b334</testcaseid>
+      <caplfunction>
+        <name>Tthi22248_Tet_Tc0</name>
+      </caplfunction>
+    </testcase>
+  </testfixture>
+</testtree>

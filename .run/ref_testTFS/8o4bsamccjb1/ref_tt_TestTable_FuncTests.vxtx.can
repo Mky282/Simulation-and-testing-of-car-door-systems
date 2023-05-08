@@ -1,0 +1,845 @@
+﻿/* !Encoding: 65001  */
+includes
+{
+  #include "__VariablesLib.cin"
+  #include "__CaplGeneratorLib.cin"
+  #include "__CANoeReportFuntionsLib.cin"
+}
+
+variables
+{
+  // Global variables defined within this CAPL file
+}
+
+void Ttrmpfbvm_tf_TestPreparation()
+{
+  TestCommandBegin(__eCAPLInline, __cCAPLInline, "", "0");
+  {
+    __cirmpfbvmCaplInline0();
+  }
+  TestCommandEnd();
+
+}
+
+void __cirmpfbvmCaplInline0()
+{
+  {
+    TestReportAddEngineerInfo("Company", "Vector Informatik Pvt. Ltd.");
+TestReportAddEngineerInfo("Tester name", "First tester");
+TestReportAddSetupInfo("CANoe", "Version 13.0");
+TestReportAddSetupInfo("vTESTstudio", "Version 5.0");
+TestReportAddSUTInfo ("SUT", "Doors ECU");
+
+  }
+}
+
+void Ttrmpfbvm_tf_Preconditions()
+{
+  TestCommandBegin(__eSet, __cSet, "", "0");
+  {
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`IgnitionStart = 1;
+      snprintf(__cArray, 8192, "%s", "IgnitionStart");
+      snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+      snprintf(__cArray3, 8192, "%s", "Ign_ON");
+      
+      __ReportTableRow(0, __cArray2, __cAOp, 1, __cArray3);
+      
+  
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+
+  TestCommandBegin(__eWait, __cWait, "", "1");
+  {
+    __Wait("1", (500 * 1000000LL), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void Ttrmpfbvm_tf_PostConditions()
+{
+  TestCommandBegin(__eSet, __cSet, "", "0");
+  {
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`IgnitionStart = 0;
+      snprintf(__cArray, 8192, "%s", "IgnitionStart");
+      snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+      snprintf(__cArray3, 8192, "%s", "Ign_OFF");
+      
+      __ReportTableRow(0, __cArray2, __cAOp, 0, __cArray3);
+      
+  
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+
+  TestCommandBegin(__eWait, __cWait, "", "1");
+  {
+    __Wait("1", (500 * 1000000LL), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void Ttrmpfbvm_Tet_TtInit()
+{
+
+}
+
+void Ttrmpfbvm_Tet_Tf_Preparation0()
+{
+  TestPreparationBegin();
+  {
+    {
+      CreateTTEIFFunction("Ttrmpfbvm_tf_TestPreparation", __eFct, __eLocal);
+      CallInterfaceFunction(__cEmpty, __cEmpty, "88d8e4c5-eb80-4625-b44c-181340628358");
+    }
+
+
+  }
+  TestPreparationEnd();
+}
+
+
+void Ttrmpfbvm_Tet_Tc0()
+{
+  CreateTTEIFFunction("Ttrmpfbvm_Tc0", __eTcDef, __eLocal);  
+  CallInterfaceFunction("ttc_WindowDownUpTest", __cEmpty , __cEmpty );
+}
+testcase Ttrmpfbvm_Tc0()
+{	
+int64 __tt0LoopVar0;
+int64 __tt0LoopVar1;
+
+  SetBreakOnFail(1);
+
+  CreateTTEIFFunction("Ttrmpfbvm_Tet_Tc0_Completion", __eFct, __eLocal);
+  
+  AddIFAsCleanUpFunction();
+
+  TestPreparationBegin();
+  {
+    {
+      CreateTTEIFFunction("Ttrmpfbvm_tf_Preconditions", __eFct, __eLocal);
+      CallInterfaceFunction(__cEmpty, __cEmpty, "7f1d7ccf-eccb-42ee-a435-2d56a0a0cfdd");
+    }
+
+
+  }
+  TestPreparationEnd();
+
+  {
+    __type_of(1) __tcLocVar0;
+    __type_of(15) __tcLocVar1;
+    __type_of(1) __tcLocVar2;
+  
+    __tcLocVar0 = 1;
+    __tcLocVar1 = 15;
+    __tcLocVar2 = 1;
+  
+    snprintf(__cArray, 8192, "%s", "1");
+    snprintf(__cArray2, 8192, "%s", "15");
+    snprintf(__cArray3, 8192, "%s", "1");
+  
+    snprintf(__cArray4, 8192, "For (For count=%s..%s, increment=%s)", __cArray, __cArray2, __cArray3);
+    TestControlStructBegin(__cFor, __cArray4, "0");  
+    for(__tt0LoopVar0 = __tcLocVar0; (__tcLocVar2 < 0) ? (CheckSignalMatch(__tt0LoopVar0, __tcLocVar1, ">=" ) == 1) : (CheckSignalMatch(__tt0LoopVar0, __tcLocVar1, "<=") == 1); __tt0LoopVar0 += __tcLocVar2)
+    {
+      if(__LoopIsBlocking())  
+        break;
+  
+      snprintf(__cArray, 8192, "%s", "1");
+      snprintf(__cArray2, 8192, "%s", "15");
+      snprintf(__cArray3, 8192, "%s", "1");
+      snprintf(__cArray4, 8192, "For (For count=%s..%s, increment=%s; current count = %lld)", __cArray, __cArray2, __cArray3, __tt0LoopVar0);
+      TestControlStructBegin(__cForIteration, __cArray4, "1");
+      TestCommandBegin(__eSet, __cSet, "", "2");
+      {
+        __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+        {
+          @sysvarInt::`testNS::`WindowRequest = 2;
+          snprintf(__cArray, 8192, "%s", "WindowRequest");
+          snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+          snprintf(__cArray3, 8192, "%s", "Roll_Down");
+          
+          __ReportTableRow(0, __cArray2, __cAOp, 2, __cArray3);
+          
+      
+        }
+        __ReportTableEndTestStep("1");
+      }
+      TestCommandEnd();
+
+
+      TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "3");
+      {
+        int64 __tt0cb_0;
+      
+        dword __signalTimes[1];
+        int64 __time;
+        long __setFailed;
+        __setFailed = 0;
+        __time = 100 * 1000000LL;
+        if (__time < 0)
+        {
+          testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+        }
+        else
+        {
+          __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`WindowState::`WindowPosition);
+                            snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "WindowPosition");
+          __tt0cb_0 = __tt0LoopVar0;
+          __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, __cArray, 0,
+                            delegate dword(signal * __cbParam)
+                            {
+                              __csr = CheckSignalMatch(__cbParam, __tt0cb_0, "==") == 1;
+                              return __csr;
+                            }) < 0;
+          if (__setFailed != 0)
+          {
+            testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+          }
+          else
+          {
+            __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+            __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+                            __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, __tt0cb_0, "==") == 1;
+                            snprintf(__cArray, 8192, "%s", "WindowPosition");
+                            snprintf(__cArray2, 8192, "%s '%s'", __cCANSignal, __cArray);
+                            snprintf(__cArray3, 8192, "%s", "count");
+                            __ReportTableRow(0, __cArray2, "==", __tt0cb_0, __cArray3);
+                            __ReportLValueOrSignalNotOnline(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, __cArray5);
+                            __ReportCell(__cArray5);
+                            __ReportCellResult(__csr, __ePassFail);
+            __ReportTableEndVerdict("1", __bVerdict);
+          }
+        }
+      }
+      TestCommandEnd();
+
+      TestCommandBegin(__eSet, __cSet, "", "4");
+      {
+        __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+        {
+          @sysvarInt::`testNS::`WindowRequest = 0;
+          snprintf(__cArray, 8192, "%s", "WindowRequest");
+          snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+          snprintf(__cArray3, 8192, "%s", "No_Request");
+          
+          __ReportTableRow(0, __cArray2, __cAOp, 0, __cArray3);
+          
+      
+        }
+        __ReportTableEndTestStep("1");
+      }
+      TestCommandEnd();
+
+
+      TestCommandBegin(__eWait, __cWait, "", "5");
+      {
+        __Wait("1", (100 * 1000000LL), 1000000, "");
+      }
+      TestCommandEnd();
+
+      TestControlStructEnd(__eUndefined);
+    }
+    TestControlStructEnd(__eUndefined);
+  }
+
+  {
+    __type_of(14) __tcLocVar0;
+    __type_of(0) __tcLocVar1;
+    __type_of(-1) __tcLocVar2;
+  
+    __tcLocVar0 = 14;
+    __tcLocVar1 = 0;
+    __tcLocVar2 = -1;
+  
+    snprintf(__cArray, 8192, "%s", "14");
+    snprintf(__cArray2, 8192, "%s", "0");
+    snprintf(__cArray3, 8192, "%s", "-1");
+  
+    snprintf(__cArray4, 8192, "For (For count=%s..%s, increment=%s)", __cArray, __cArray2, __cArray3);
+    TestControlStructBegin(__cFor, __cArray4, "0");  
+    for(__tt0LoopVar1 = __tcLocVar0; (__tcLocVar2 < 0) ? (CheckSignalMatch(__tt0LoopVar1, __tcLocVar1, ">=" ) == 1) : (CheckSignalMatch(__tt0LoopVar1, __tcLocVar1, "<=") == 1); __tt0LoopVar1 += __tcLocVar2)
+    {
+      if(__LoopIsBlocking())  
+        break;
+  
+      snprintf(__cArray, 8192, "%s", "14");
+      snprintf(__cArray2, 8192, "%s", "0");
+      snprintf(__cArray3, 8192, "%s", "-1");
+      snprintf(__cArray4, 8192, "For (For count=%s..%s, increment=%s; current count = %lld)", __cArray, __cArray2, __cArray3, __tt0LoopVar1);
+      TestControlStructBegin(__cForIteration, __cArray4, "6");
+      TestCommandBegin(__eSet, __cSet, "", "7");
+      {
+        __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+        {
+          @sysvarInt::`testNS::`WindowRequest = 1;
+          snprintf(__cArray, 8192, "%s", "WindowRequest");
+          snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+          snprintf(__cArray3, 8192, "%s", "Roll_Up");
+          
+          __ReportTableRow(0, __cArray2, __cAOp, 1, __cArray3);
+          
+      
+        }
+        __ReportTableEndTestStep("1");
+      }
+      TestCommandEnd();
+
+
+      TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "8");
+      {
+        int64 __tt0cb_1;
+      
+        dword __signalTimes[1];
+        int64 __time;
+        long __setFailed;
+        __setFailed = 0;
+        __time = 100 * 1000000LL;
+        if (__time < 0)
+        {
+          testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+        }
+        else
+        {
+          __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`WindowState::`WindowPosition);
+                            snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "WindowPosition");
+          __tt0cb_1 = __tt0LoopVar1;
+          __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, __cArray, 0,
+                            delegate dword(signal * __cbParam)
+                            {
+                              __csr = CheckSignalMatch(__cbParam, __tt0cb_1, "==") == 1;
+                              return __csr;
+                            }) < 0;
+          if (__setFailed != 0)
+          {
+            testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+          }
+          else
+          {
+            __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+            __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+                            __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, __tt0cb_1, "==") == 1;
+                            snprintf(__cArray, 8192, "%s", "WindowPosition");
+                            snprintf(__cArray2, 8192, "%s '%s'", __cCANSignal, __cArray);
+                            snprintf(__cArray3, 8192, "%s", "count");
+                            __ReportTableRow(0, __cArray2, "==", __tt0cb_1, __cArray3);
+                            __ReportLValueOrSignalNotOnline(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, __cArray5);
+                            __ReportCell(__cArray5);
+                            __ReportCellResult(__csr, __ePassFail);
+            __ReportTableEndVerdict("1", __bVerdict);
+          }
+        }
+      }
+      TestCommandEnd();
+
+      TestCommandBegin(__eSet, __cSet, "", "9");
+      {
+        __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+        {
+          @sysvarInt::`testNS::`WindowRequest = 0;
+          snprintf(__cArray, 8192, "%s", "WindowRequest");
+          snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+          snprintf(__cArray3, 8192, "%s", "No_Request");
+          
+          __ReportTableRow(0, __cArray2, __cAOp, 0, __cArray3);
+          
+      
+        }
+        __ReportTableEndTestStep("1");
+      }
+      TestCommandEnd();
+
+
+      TestCommandBegin(__eWait, __cWait, "", "10");
+      {
+        __Wait("1", (100 * 1000000LL), 1000000, "");
+      }
+      TestCommandEnd();
+
+      TestControlStructEnd(__eUndefined);
+    }
+    TestControlStructEnd(__eUndefined);
+  }
+
+
+}
+
+void Ttrmpfbvm_Tet_Tc0_Completion()
+{  
+  TestCompletionBegin();
+  {
+    {
+      CreateTTEIFFunction("Ttrmpfbvm_tf_PostConditions", __eFct, __eLocal);
+      CallInterfaceFunction(__cEmpty, __cEmpty, "9b529bf0-79f6-459b-b3fa-2de10cae1524");
+    }
+
+
+  }
+  TestCompletionEnd();
+}
+
+void Ttrmpfbvm_Tet_Tc1()
+{
+  CreateTTEIFFunction("Ttrmpfbvm_Tc1", __eTcDef, __eLocal);  
+  CallInterfaceFunction("ttc_RequestLock", __cEmpty , __cEmpty );
+}
+testcase Ttrmpfbvm_Tc1()
+{	
+  SetBreakOnFail(1);
+
+  CreateTTEIFFunction("Ttrmpfbvm_Tet_Tc1_Completion", __eFct, __eLocal);
+  
+  AddIFAsCleanUpFunction();
+
+  TestPreparationBegin();
+  {
+    {
+      CreateTTEIFFunction("Ttrmpfbvm_tf_Preconditions", __eFct, __eLocal);
+      CallInterfaceFunction(__cEmpty, __cEmpty, "7f1d7ccf-eccb-42ee-a435-2d56a0a0cfdd");
+    }
+
+
+  }
+  TestPreparationEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", "1");
+  {
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`LockRq = 1;
+      snprintf(__cArray, 8192, "%s", "LockRq");
+      snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+      snprintf(__cArray3, 8192, "%s", "RqToUnlock");
+      
+      __ReportTableRow(0, __cArray2, __cAOp, 1, __cArray3);
+      
+  
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "2");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 100 * 1000000LL;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`LockingState::`LockState);
+                        snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "LockState");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`LockingState::`LockState, __cArray, 0,
+                        delegate dword(signal * __cbParam)
+                        {
+                          __csr = CheckSignalMatch(__cbParam, 1, "==") == 1;
+                          return __csr;
+                        }) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+                        __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`LockingState::`LockState, 1, "==") == 1;
+                        snprintf(__cArray, 8192, "%s", "LockState");
+                        snprintf(__cArray2, 8192, "%s '%s'", __cCANSignal, __cArray);
+                        snprintf(__cArray3, 8192, "%s", "Unlocked");
+                        __ReportTableRow(0, __cArray2, "==", 1, __cArray3);
+                        __ReportLValueOrSignalNotOnline(`CAN::dbNode::`Doors::`LockingState::`LockState, __cArray5);
+                        __ReportCell(__cArray5);
+                        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", "3");
+  {
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`LockRq = 0;
+      snprintf(__cArray, 8192, "%s", "LockRq");
+      snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+      snprintf(__cArray3, 8192, "%s", "RqToLock");
+      
+      __ReportTableRow(0, __cArray2, __cAOp, 0, __cArray3);
+      
+  
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "4");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 100 * 1000000LL;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`LockingState::`LockState);
+                        snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "LockState");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`LockingState::`LockState, __cArray, 0,
+                        delegate dword(signal * __cbParam)
+                        {
+                          __csr = CheckSignalMatch(__cbParam, 0, "==") == 1;
+                          return __csr;
+                        }) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+                        __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`LockingState::`LockState, 0, "==") == 1;
+                        snprintf(__cArray, 8192, "%s", "LockState");
+                        snprintf(__cArray2, 8192, "%s '%s'", __cCANSignal, __cArray);
+                        snprintf(__cArray3, 8192, "%s", "Locked");
+                        __ReportTableRow(0, __cArray2, "==", 0, __cArray3);
+                        __ReportLValueOrSignalNotOnline(`CAN::dbNode::`Doors::`LockingState::`LockState, __cArray5);
+                        __ReportCell(__cArray5);
+                        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+
+}
+
+void Ttrmpfbvm_Tet_Tc1_Completion()
+{  
+  TestCompletionBegin();
+  {
+    {
+      CreateTTEIFFunction("Ttrmpfbvm_tf_PostConditions", __eFct, __eLocal);
+      CallInterfaceFunction(__cEmpty, __cEmpty, "9b529bf0-79f6-459b-b3fa-2de10cae1524");
+    }
+
+
+  }
+  TestCompletionEnd();
+}
+
+void Ttrmpfbvm_Tet_Tc2()
+{
+  CreateTTEIFFunction("Ttrmpfbvm_Tc2", __eTcDef, __eLocal);  
+  CallInterfaceFunction("ttc_AutoLock", __cEmpty , __cEmpty );
+}
+testcase Ttrmpfbvm_Tc2()
+{	
+  SetBreakOnFail(1);
+
+  CreateTTEIFFunction("Ttrmpfbvm_Tet_Tc2_Completion", __eFct, __eLocal);
+  
+  AddIFAsCleanUpFunction();
+
+  TestPreparationBegin();
+  {
+    {
+      CreateTTEIFFunction("Ttrmpfbvm_tf_Preconditions", __eFct, __eLocal);
+      CallInterfaceFunction(__cEmpty, __cEmpty, "7f1d7ccf-eccb-42ee-a435-2d56a0a0cfdd");
+    }
+
+
+  }
+  TestPreparationEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", "1");
+  {
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`LockRq = 1;
+      snprintf(__cArray, 8192, "%s", "LockRq");
+      snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+      snprintf(__cArray3, 8192, "%s", "RqToUnlock");
+      
+      __ReportTableRow(0, __cArray2, __cAOp, 1, __cArray3);
+      
+  
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+
+  TestCommandBegin(__eSet, __cSet, "", "2");
+  {
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`Velocity = 15;
+      snprintf(__cArray, 8192, "%s", "Velocity");
+      snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+      snprintf(__cArray3, 8192, "%s", "");
+      
+      __ReportTableRow(0, __cArray2, __cAOp, 15, __cArray3);
+      
+  
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "3");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 200 * 1000000LL;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Engine::`EngineStatus::`Velocity);
+                        snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "Velocity");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, __cArray, 0,
+                        delegate dword(signal * __cbParam)
+                        {
+                          __csr = CheckSignalMatch(__cbParam, 15, "==") == 1;
+                          return __csr;
+                        }) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+                        __csr = CheckSignalMatch(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, 15, "==") == 1;
+                        snprintf(__cArray, 8192, "%s", "Velocity");
+                        snprintf(__cArray2, 8192, "%s '%s'", __cCANSignal, __cArray);
+                        snprintf(__cArray3, 8192, "%s", "");
+                        __ReportTableRow(0, __cArray2, "==", 15, __cArray3);
+                        __ReportLValueOrSignalNotOnline(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, __cArray5);
+                        __ReportCell(__cArray5);
+                        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "4");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 100 * 1000000LL;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`LockingState::`LockState);
+                        snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "LockState");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`LockingState::`LockState, __cArray, 0,
+                        delegate dword(signal * __cbParam)
+                        {
+                          __csr = CheckSignalMatch(__cbParam, 1, "==") == 1;
+                          return __csr;
+                        }) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+                        __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`LockingState::`LockState, 1, "==") == 1;
+                        snprintf(__cArray, 8192, "%s", "LockState");
+                        snprintf(__cArray2, 8192, "%s '%s'", __cCANSignal, __cArray);
+                        snprintf(__cArray3, 8192, "%s", "Unlocked");
+                        __ReportTableRow(0, __cArray2, "==", 1, __cArray3);
+                        __ReportLValueOrSignalNotOnline(`CAN::dbNode::`Doors::`LockingState::`LockState, __cArray5);
+                        __ReportCell(__cArray5);
+                        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", "5");
+  {
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`Velocity = 16;
+      snprintf(__cArray, 8192, "%s", "Velocity");
+      snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+      snprintf(__cArray3, 8192, "%s", "");
+      
+      __ReportTableRow(0, __cArray2, __cAOp, 16, __cArray3);
+      
+  
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "6");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 200 * 1000000LL;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Engine::`EngineStatus::`Velocity);
+                        snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "Velocity");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, __cArray, 0,
+                        delegate dword(signal * __cbParam)
+                        {
+                          __csr = CheckSignalMatch(__cbParam, 16, "==") == 1;
+                          return __csr;
+                        }) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+                        __csr = CheckSignalMatch(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, 16, "==") == 1;
+                        snprintf(__cArray, 8192, "%s", "Velocity");
+                        snprintf(__cArray2, 8192, "%s '%s'", __cCANSignal, __cArray);
+                        snprintf(__cArray3, 8192, "%s", "");
+                        __ReportTableRow(0, __cArray2, "==", 16, __cArray3);
+                        __ReportLValueOrSignalNotOnline(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, __cArray5);
+                        __ReportCell(__cArray5);
+                        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "7");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 100 * 1000000LL;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`LockingState::`LockState);
+                        snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "LockState");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`LockingState::`LockState, __cArray, 0,
+                        delegate dword(signal * __cbParam)
+                        {
+                          __csr = CheckSignalMatch(__cbParam, 0, "==") == 1;
+                          return __csr;
+                        }) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+                        __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`LockingState::`LockState, 0, "==") == 1;
+                        snprintf(__cArray, 8192, "%s", "LockState");
+                        snprintf(__cArray2, 8192, "%s '%s'", __cCANSignal, __cArray);
+                        snprintf(__cArray3, 8192, "%s", "Locked");
+                        __ReportTableRow(0, __cArray2, "==", 0, __cArray3);
+                        __ReportLValueOrSignalNotOnline(`CAN::dbNode::`Doors::`LockingState::`LockState, __cArray5);
+                        __ReportCell(__cArray5);
+                        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", "8");
+  {
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`Velocity = 0;
+      snprintf(__cArray, 8192, "%s", "Velocity");
+      snprintf(__cArray2, 8192, "%s '%s'", __cSysVar, __cArray);
+      snprintf(__cArray3, 8192, "%s", "");
+      
+      __ReportTableRow(0, __cArray2, __cAOp, 0, __cArray3);
+      
+  
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+
+
+}
+
+void Ttrmpfbvm_Tet_Tc2_Completion()
+{  
+  TestCompletionBegin();
+  {
+    {
+      CreateTTEIFFunction("Ttrmpfbvm_tf_PostConditions", __eFct, __eLocal);
+      CallInterfaceFunction(__cEmpty, __cEmpty, "9b529bf0-79f6-459b-b3fa-2de10cae1524");
+    }
+
+
+  }
+  TestCompletionEnd();
+}
+

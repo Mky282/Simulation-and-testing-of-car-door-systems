@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<tclibrary>
+  <function name="tf_TestPreparation" id="0" comment="" signature="" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_TestTable\ref_tt_TestTable_FuncTests.vtt" SourceFilePersistencyGuid="gn2627nm5foa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="88d8e4c5-eb80-4625-b44c-181340628358">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[1]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="tf_Preconditions" id="0" comment="" signature="" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_TestTable\ref_tt_TestTable_FuncTests.vtt" SourceFilePersistencyGuid="gn2627nm5foa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="7f1d7ccf-eccb-42ee-a435-2d56a0a0cfdd">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[2]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+  <function name="tf_PostConditions" id="0" comment="" signature="" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_TestTable\ref_tt_TestTable_FuncTests.vtt" SourceFilePersistencyGuid="gn2627nm5foa" IsPrivate="true" IsNetSignatureAndDefinedInExternalDll="true" guid="9b529bf0-79f6-459b-b3fa-2de10cae1524">
+    <document_position><![CDATA[<XPathDocumentPosition xmlns:SerializedType="Vector.ITE.Document.XPathDocumentPosition"><XPath>/ttroot/ttlib[1]/function_definitions[1]/function_definition[3]/name[1]</XPath></XPathDocumentPosition>]]></document_position>
+    <implementation_language lang="TTE" />
+  </function>
+</tclibrary>

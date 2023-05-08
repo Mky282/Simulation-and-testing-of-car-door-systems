@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MakeInfo>
+  <EnvironmentHash>4350145535327527307</EnvironmentHash>
+  <ExportTableHash>576083553597103320</ExportTableHash>
+  <UserCaplExportTableHash>0</UserCaplExportTableHash>
+  <Files>
+    <File Name="51lgbuujqsqu=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\51lgbuujqsqu=VP.vvarprop" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:28.3749016+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="51lgbuujqsqu_PA.dll" Time="Thursday, October 8, 2020 1:18:52 PM" DependentOn="51lgbuujqsqu=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\51lgbuujqsqu_PA.dll" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:52.9273034+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="51lgbuujqsqu=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\51lgbuujqsqu=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3749016+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="m8dh3u5eobov_TestSysVars.dll" Time="Thursday, October 8, 2020 1:18:53 PM" DependentOn="ag8tr8elp0ju-MTSV">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\m8dh3u5eobov_TestSysVars.dll" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:53.2145195+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ag8tr8elp0ju-MTSV" Time="Thursday, October 8, 2020 1:18:27 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\ag8tr8elp0ju-MTSV" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:27.8981837+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ag8tr8elp0ju-MTSV" Time="Thursday, October 8, 2020 1:18:27 PM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\ag8tr8elp0ju-MTSV" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:27.8981837+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="ref_tu_CSharp.dll" Time="Thursday, October 8, 2020 1:19:40 PM" DependentOn="ref_NET_FuncTests.cs, 51lgbuujqsqu_PA.dll, 51lgbuujqsqu_CA.dll, m8dh3u5eobov_TestSysVars.dll">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_tu_CSharp.dll" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:19:40.9298188+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_NET_FuncTests.cs" Time="Thursday, October 8, 2020 1:19:19 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_CSharp\ref_NET_FuncTests.cs" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:19:19.1438602+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="51lgbuujqsqu_PA.dll" Time="Thursday, October 8, 2020 1:18:52 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\51lgbuujqsqu_PA.dll" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:52.9273034+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="51lgbuujqsqu_CA.dll" Time="Thursday, October 8, 2020 1:18:53 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\51lgbuujqsqu_CA.dll" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:53.0679137+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="m8dh3u5eobov_TestSysVars.dll" Time="Thursday, October 8, 2020 1:18:53 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\m8dh3u5eobov_TestSysVars.dll" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:53.2145195+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_NET_FuncTests.cs" Time="Thursday, October 8, 2020 1:19:19 PM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_CSharp\ref_NET_FuncTests.cs" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:19:19.1438602+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="51lgbuujqsqu_CA.dll" Time="Thursday, October 8, 2020 1:18:53 PM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\51lgbuujqsqu_CA.dll" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:53.0679137+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="ref_tt_NET_FuncTests.vtt" Time="Monday, June 22, 2020 6:13:42 PM" DependentOn="51lgbuujqsqu=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_CSharp\ref_tt_NET_FuncTests.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-06-22T18:13:42.7560646+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="51lgbuujqsqu=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\51lgbuujqsqu=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3749016+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_tt_NET_FuncTests.vxtx" Time="Thursday, October 8, 2020 1:18:54 PM" DependentOn="ref_tt_NET_FuncTests.vtt, 51lgbuujqsqu=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_tt_NET_FuncTests.vxtx" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:54.5409510+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_tt_NET_FuncTests.vtt" Time="Monday, June 22, 2020 6:13:42 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_CSharp\ref_tt_NET_FuncTests.vtt" /&gt;</File>
+          <LastWriteTime>2020-06-22T18:13:42.7560646+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="51lgbuujqsqu=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\51lgbuujqsqu=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3749016+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_tt_NET_FuncTests.vxtx.can" Time="Thursday, October 8, 2020 1:18:54 PM" DependentOn="ref_tt_NET_FuncTests.vtt, 51lgbuujqsqu=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_tt_NET_FuncTests.vxtx.can" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:54.5509312+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_tt_NET_FuncTests.vtt" Time="Monday, June 22, 2020 6:13:42 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_CSharp\ref_tt_NET_FuncTests.vtt" /&gt;</File>
+          <LastWriteTime>2020-06-22T18:13:42.7560646+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="51lgbuujqsqu=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\51lgbuujqsqu=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3749016+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_tt_NET_FuncTests.vxtx.cbf" Time="Thursday, October 8, 2020 1:18:54 PM" DependentOn="ref_tt_NET_FuncTests.vxtx.can">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_tt_NET_FuncTests.vxtx.cbf" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:54.5848364+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_tt_NET_FuncTests.vxtx.can" Time="Thursday, October 8, 2020 1:18:54 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_tt_NET_FuncTests.vxtx.can" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:54.5509312+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_NET_FuncTests.cs" Time="Thursday, October 8, 2020 1:19:39 PM" DependentOn="ref_NET_FuncTests.cs">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_NET_FuncTests.cs" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:19:39.7649465+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_NET_FuncTests.cs" Time="Thursday, October 8, 2020 1:19:19 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_CSharp\ref_NET_FuncTests.cs" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:19:19.1438602+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="TestSysVars.vsysvar" Time="Thursday, October 8, 2020 1:18:27 PM" DependentOn="ag8tr8elp0ju-MTSV">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:27.8981837+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ag8tr8elp0ju-MTSV" Time="Thursday, October 8, 2020 1:18:27 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\ag8tr8elp0ju-MTSV" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:27.8981837+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+  </Files>
+</MakeInfo>

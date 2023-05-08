@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MakeInfo>
+  <EnvironmentHash>4350145535327527307</EnvironmentHash>
+  <ExportTableHash>0</ExportTableHash>
+  <UserCaplExportTableHash>0</UserCaplExportTableHash>
+  <Files>
+    <File Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="ref_Preconditions.vtsd" Time="Tuesday, June 30, 2020 1:18:44 PM" DependentOn="hgv8475tults=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Preconditions.vtsd" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-06-30T13:18:44.4114679+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_Postconditions.vtsd" Time="Tuesday, June 30, 2020 1:19:08 PM" DependentOn="hgv8475tults=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Postconditions.vtsd" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-06-30T13:19:08.3595562+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_WindowDownUp.vtsd" Time="Tuesday, June 30, 2020 5:24:03 PM" DependentOn="ref_Preconditions.vtsd, hgv8475tults=VP.vvarprop, ref_Postconditions.vtsd">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_dtc_WindowDownUp.vtsd" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-06-30T17:24:03.8600441+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_Preconditions.vtsd" Time="Tuesday, June 30, 2020 1:18:44 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Preconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:18:44.4114679+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_Postconditions.vtsd" Time="Tuesday, June 30, 2020 1:19:08 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Postconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:19:08.3595562+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_WindowDownUp.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_Preconditions.vtsd, ref_dtc_WindowDownUp.vtsd, hgv8475tults=VP.vvarprop, ref_Postconditions.vtsd">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_WindowDownUp.vtsd.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.6908570+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_Preconditions.vtsd" Time="Tuesday, June 30, 2020 1:18:44 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Preconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:18:44.4114679+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_dtc_WindowDownUp.vtsd" Time="Tuesday, June 30, 2020 5:24:03 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_dtc_WindowDownUp.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T17:24:03.8600441+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_Postconditions.vtsd" Time="Tuesday, June 30, 2020 1:19:08 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Postconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:19:08.3595562+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_WindowDownUp.vtsd.vxtx" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_WindowDownUp.vtsd.vtt">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_WindowDownUp.vtsd.vxtx" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.7187842+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_WindowDownUp.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_WindowDownUp.vtsd.vtt" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.6908570+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_WindowDownUp.vtsd.vxtx.can" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_WindowDownUp.vtsd.vtt">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_WindowDownUp.vtsd.vxtx.can" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.7227810+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_WindowDownUp.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_WindowDownUp.vtsd.vtt" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.6908570+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_WindowDownUp.vtsd.vxtx.cbf" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_WindowDownUp.vtsd.vxtx.can">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_WindowDownUp.vtsd.vxtx.cbf" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.8264921+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_WindowDownUp.vtsd.vxtx.can" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_WindowDownUp.vtsd.vxtx.can" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.7227810+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="TestSysVars.vsysvar" Time="Thursday, October 8, 2020 1:18:27 PM" DependentOn="ag8tr8elp0ju-MTSV">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="TestSysVars.vsysvar" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:27.8981837+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ag8tr8elp0ju-MTSV" Time="Thursday, October 8, 2020 1:18:27 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\ag8tr8elp0ju-MTSV" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:27.8981837+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ag8tr8elp0ju-MTSV" Time="Thursday, October 8, 2020 1:18:27 PM" DependentOn="">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\ag8tr8elp0ju-MTSV" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:27.8981837+05:30</LastWriteTime>
+      <Dependencies />
+    </File>
+    <File Name="ref_dtc_RequestLock.vtsd" Time="Tuesday, June 30, 2020 7:40:50 PM" DependentOn="ref_Preconditions.vtsd, ref_Postconditions.vtsd, hgv8475tults=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_dtc_RequestLock.vtsd" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-06-30T19:40:50.7909450+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_Preconditions.vtsd" Time="Tuesday, June 30, 2020 1:18:44 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Preconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:18:44.4114679+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_Postconditions.vtsd" Time="Tuesday, June 30, 2020 1:19:08 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Postconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:19:08.3595562+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_RequestLock.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_Preconditions.vtsd, ref_Postconditions.vtsd, ref_dtc_RequestLock.vtsd, hgv8475tults=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_RequestLock.vtsd.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.6928517+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_Preconditions.vtsd" Time="Tuesday, June 30, 2020 1:18:44 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Preconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:18:44.4114679+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_Postconditions.vtsd" Time="Tuesday, June 30, 2020 1:19:08 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Postconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:19:08.3595562+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_dtc_RequestLock.vtsd" Time="Tuesday, June 30, 2020 7:40:50 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_dtc_RequestLock.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T19:40:50.7909450+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_RequestLock.vtsd.vxtx" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_RequestLock.vtsd.vtt">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_RequestLock.vtsd.vxtx" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.7277572+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_RequestLock.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_RequestLock.vtsd.vtt" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.6928517+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_RequestLock.vtsd.vxtx.can" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_RequestLock.vtsd.vtt">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_RequestLock.vtsd.vxtx.can" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.7307500+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_RequestLock.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_RequestLock.vtsd.vtt" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.6928517+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_RequestLock.vtsd.vxtx.cbf" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_RequestLock.vtsd.vxtx.can">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_RequestLock.vtsd.vxtx.cbf" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.8663852+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_RequestLock.vtsd.vxtx.can" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_RequestLock.vtsd.vxtx.can" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.7307500+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_AutoLock.vtsd" Time="Tuesday, June 30, 2020 7:53:15 PM" DependentOn="ref_Preconditions.vtsd, ref_Postconditions.vtsd, hgv8475tults=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_dtc_AutoLock.vtsd" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-06-30T19:53:15.8053084+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_Preconditions.vtsd" Time="Tuesday, June 30, 2020 1:18:44 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Preconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:18:44.4114679+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_Postconditions.vtsd" Time="Tuesday, June 30, 2020 1:19:08 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Postconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:19:08.3595562+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_AutoLock.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_Preconditions.vtsd, ref_Postconditions.vtsd, ref_dtc_AutoLock.vtsd, hgv8475tults=VP.vvarprop">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_AutoLock.vtsd.vtt" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.6739029+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_Preconditions.vtsd" Time="Tuesday, June 30, 2020 1:18:44 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Preconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:18:44.4114679+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_Postconditions.vtsd" Time="Tuesday, June 30, 2020 1:19:08 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_Postconditions.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T13:19:08.3595562+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="ref_dtc_AutoLock.vtsd" Time="Tuesday, June 30, 2020 7:53:15 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\..\ref_tu_SeqDiag\ref_dtc_AutoLock.vtsd" /&gt;</File>
+          <LastWriteTime>2020-06-30T19:53:15.8053084+05:30</LastWriteTime>
+        </DependentOn>
+        <DependentOn Name="hgv8475tults=VP.vvarprop" Time="Thursday, October 8, 2020 1:18:28 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="..\hgv8475tults=VP.vvarprop" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:28.3788896+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_AutoLock.vtsd.vxtx" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_AutoLock.vtsd.vtt">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_AutoLock.vtsd.vxtx" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.7108039+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_AutoLock.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_AutoLock.vtsd.vtt" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.6739029+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_AutoLock.vtsd.vxtx.can" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_AutoLock.vtsd.vtt">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_AutoLock.vtsd.vxtx.can" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.7147922+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_AutoLock.vtsd.vtt" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="ref_dtc_AutoLock.vtsd.vtt" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.6739029+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+    <File Name="ref_dtc_AutoLock.vtsd.vxtx.cbf" Time="Thursday, October 8, 2020 1:18:55 PM" DependentOn="ref_dtc_AutoLock.vtsd.vxtx.can">
+      <SerializedBasedFileName>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_AutoLock.vtsd.vxtx.cbf" /&gt;</SerializedBasedFileName>
+      <LastWriteTime>2020-10-08T13:18:55.7836077+05:30</LastWriteTime>
+      <Dependencies>
+        <DependentOn Name="ref_dtc_AutoLock.vtsd.vxtx.can" Time="Thursday, October 8, 2020 1:18:55 PM">
+          <File>&lt;VFileName v="V9" f="BQL" init="1" base="cfg" name="__TsoBuildFiles_\ref_dtc_AutoLock.vtsd.vxtx.can" /&gt;</File>
+          <LastWriteTime>2020-10-08T13:18:55.7147922+05:30</LastWriteTime>
+        </DependentOn>
+      </Dependencies>
+    </File>
+  </Files>
+</MakeInfo>

@@ -1,0 +1,228 @@
+/*@!Encoding:1252*/
+includes
+{
+
+}
+
+variables
+{
+const dword kWAIT_TIMEOUT = 500; // 500msecs
+  int WaitResult;
+}
+
+export void cf_testPreparation()
+{
+  /* Add Information into Test engineer Information Table */
+  TestReportAddEngineerInfo("Company", "Vector Informatik Pvt. Ltd.");
+  TestReportAddEngineerInfo("Tester name", "Shyam Sundhar");
+  TestReportAddSetupInfo("CANoe", "Version 13.0");
+  TestReportAddSetupInfo("vTESTstudio", "Version 5.0");
+  TestReportAddSUTInfo ("SUT", "Doors ECU");
+}
+
+export testcase ctc_WindowDownUp()
+{
+  int LoopVar;
+  message WindowState WinStat;
+  
+  TestCaseTitle("Rolling Windows", "Window Down and Up");
+  
+  cf_PreConditions();
+  
+  testStep("Test Step 1", "Rolling down window completely");
+  // For loop to roll down the window completely
+  for(LoopVar = 1; LoopVar < 16; LoopVar++)
+  {
+    testStep("Start","Roll Down Window to position %d",LoopVar);
+    //Set Window Request to Roll Down
+    @sysvar::testNS::WindowRequest = @sysvar::testNS::WindowRequest::Roll_Down;
+    // Wait for the message “WindowState” to occur
+    WaitResult = TestWaitForMessage(WindowState, kWAIT_TIMEOUT);
+    // Determine results of test step
+    switch(WaitResult)
+    {
+      case 0: TestStepFail("Message not received");
+        break;
+      case 1:
+        // Retrieve the message data of “WinStat”
+        TestGetWaitEventMsgData(WinStat);
+        // Check if Actual Window position = Calculated Window position
+        if(WinStat.WindowPosition == LoopVar)
+          TestStepPass("","Window is rolled down to position %d", WinStat.WindowPosition);
+        else
+          TestStepFail("","Window is still in position %d", WinStat.WindowPosition);
+        break;
+      default: 
+          TestStepFail("Failed for other reasons");
+    }
+    // Make sure to reset Window Down button to original position
+    @sysvar::testNS::WindowRequest = @sysvar::testNS::WindowRequest::No_Request;
+  }
+  TestReportAddWindowCapture("Trace", "" , "Window Down");
+  traceWindowClear("Trace");
+  testWaitForTimeout(kWAIT_TIMEOUT);
+  
+  testStep("Test Step 2", "Rolling up window completely");
+  // For loop to roll up the window completely
+  for(LoopVar = 14; LoopVar >= 0; LoopVar--)
+  {
+    testStep("Start","Roll Up Window to position %d",LoopVar);
+    //Set Window Request to Roll Up
+    @sysvar::testNS::WindowRequest = @sysvar::testNS::WindowRequest::Roll_Up;
+    // Wait for the message “WindowState” to occur
+    WaitResult = TestWaitForMessage(WindowState, kWAIT_TIMEOUT);
+    // Determine results of test step
+    switch(WaitResult)
+    {
+      case 0: TestStepFail("Message not received");
+        break;
+      case 1:
+        // Retrieve the message data of “WinStat”
+        TestGetWaitEventMsgData(WinStat);
+        // Check if Actual Window position = Calculated Window position
+        if(WinStat.WindowPosition == LoopVar)
+          TestStepPass("","Window is rolled up to position %d", WinStat.WindowPosition);
+        else
+          TestStepFail("","Window is still in position %d", WinStat.WindowPosition);
+        break;
+      default: 
+          TestStepFail("Failed for other reasons");
+    }
+    // Make sure to reset Window Down button to original position
+    @sysvar::testNS::WindowRequest = @sysvar::testNS::WindowRequest::No_Request;
+  }
+  TestReportAddWindowCapture("Trace", "" , "Window Up");
+  
+  cf_PostConditions();
+}
+
+export testcase ctc_RequestLock()
+{
+  message LockingState LockingStatus;
+  
+  TestCaseTitle("Locking Test", "Request to Lock");
+  
+  cf_PreConditions();
+  
+  testStep("","Set request to Lock State");
+  @sysvar::testNS::LockRq = @sysvar::testNS::LockRq::RqToLock;
+  
+  TestStep("Unlocking Test", "Set Locking request to RqToUnlock");
+  @sysvar::testNS::LockRq = @sysvar::testNS::LockRq::RqToUnlock;
+  
+  // Wait for the reply message from Doors ECU for 500ms
+  WaitResult = TestWaitForMessage(LockingState, kWAIT_TIMEOUT);
+  
+  // Determine results of test step
+  switch(WaitResult)
+  {
+    case 0: TestStepFail("Message not received");
+      break;
+    case 1:
+      // Retrieve the message data of “LockSysState”
+      TestGetWaitEventMsgData(LockingStatus);
+      // If Lock state is unlocked, then test passed.
+      if(LockingStatus.LockState == VtSig_LockState::Unlocked ) TestStepPass("Test Step 1", "Door is Unlocked");
+      else TestStepFail("Test Step 1", "Still Locked");
+      break;
+  }
+  TestWaitForTimeout(kWAIT_TIMEOUT); // Wait for 500ms
+  
+  TestStep("Locking Test", "Set Locking request to RqToLock");
+  @sysvar::testNS::LockRq = @sysvar::testNS::LockRq::RqToLock;
+  
+  // Wait for the message “LockingSysState” to occur for 500ms
+  WaitResult = TestWaitForMessage(LockingState, kWAIT_TIMEOUT);
+  // Determine results of test step
+  switch(WaitResult)
+  {
+    case 0: TestStepFail("Message not received");
+      break;
+    case 1:
+      // Retrieve the message data of “LockSysState”
+      TestGetWaitEventMsgData(LockingStatus);
+      // If Lock state is locked, then test passed.
+      if(LockingStatus.LockState == VtSig_LockState::Locked ) TestStepPass("Test Step 1", "Door is Locked");
+      else TestStepFail("Test Step 1", "Still Unlocked");
+      break;
+  }
+  TestWaitForTimeout(kWAIT_TIMEOUT); // Wait for 500ms
+  
+  cf_PostConditions();
+}
+
+export testcase ctc_AutoLock()
+{
+  message EngineStatus EngState;
+  message LockingState LockSysState;
+  byte ind1,ind2;
+  
+  TestCaseTitle("Locking Test", "Auto Lock");
+  
+  cf_PreConditions();
+  
+  testStep("","Set Locking request to RqToUnlock");
+  @sysvar::testNS::LockRq = @sysvar::testNS::LockRq::RqToUnlock;
+  
+  //Check if the door is "Unlocked" before reaching the threshold
+  testStep("Set speed","15 kmph");
+  @sysvar::testNS::Velocity = 15;
+  
+  ind1 = testJoinMessageEvent(EngineStatus);
+  ind2 = testJoinMessageEvent(LockingState);
+  testWaitForAllJoinedEvents(200);
+  testGetWaitEventMsgData(ind1, EngState);
+  testGetWaitEventMsgData(ind2, LockSysState);
+  
+  if(EngState.Velocity == 15)
+  {
+    testWaitForTimeout(50);
+    if(LockSysState.LockState == VtSig_LockState::Unlocked)
+      testStepPass("Door is in Unlocked state before reaching the speed threshold");
+    else
+      testStepFail("Door is not in Unlocked state before reaching the speed threshold");
+  }
+  
+  //Check if the door is "Locked" after reaching the threshold
+  testStep("Set speed","16 kmph");
+  @sysvar::testNS::Velocity = 16;
+  
+  ind1 = testJoinMessageEvent(EngineStatus);
+  ind2 = testJoinMessageEvent(LockingState);
+  testWaitForAllJoinedEvents(200);
+  testGetWaitEventMsgData(ind1, EngState);
+  testGetWaitEventMsgData(ind2, LockSysState);
+  
+  if(EngState.Velocity == 16)
+  {
+    testWaitForMessage(LockingState,200);
+    if(LockSysState.LockState == VtSig_LockState::Locked)
+      testStepPass("Door is in Locked state after reaching the speed threshold");
+    else
+      testStepFail("Door is not in Locked state after reaching the speed threshold");
+  }    
+  testStep("","Reset speed back to 0 kmph");
+  @sysvar::testNS::Velocity = 0;
+  
+  cf_PostConditions();
+}
+
+void cf_PreConditions()
+{
+  testStep("Pre-cond","Start");
+  testStep("","Set Ignition to ON");
+  // Set Ignition to ON
+  @sysvar::testNS::IgnitionStart = @sysvar::testNS::IgnitionStart::Ign_ON;
+  testWaitForTimeout(500);
+  testStep("Pre-cond","End");
+}
+
+void cf_PostConditions()
+{
+  testStep("Post-cond","Start");
+  testStep("","Set Ignition to OFF");
+  // Set Ignition to OFF
+  @sysvar::testNS::IgnitionStart = @sysvar::testNS::IgnitionStart::Ign_OFF;
+  testWaitForTimeout(500);
+  testStep("Post-cond","End");
+}

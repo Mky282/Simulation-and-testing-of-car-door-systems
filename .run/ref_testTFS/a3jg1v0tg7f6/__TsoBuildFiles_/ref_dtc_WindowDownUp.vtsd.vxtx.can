@@ -1,0 +1,314 @@
+﻿/* !Encoding: 65001  */
+includes
+{
+  #include "__VariablesLib.cin"
+  #include "__CaplGeneratorLib.cin"
+  #include "__CANoeReportFuntionsLib.cin"
+}
+
+variables
+{
+  // Global variables defined within this CAPL file
+  double __tt4cb0;
+  double __tt4cb1;
+}
+
+void Tt1kchh8g_MelFunction_BinaryLink_53104f9a_861d_4579_a9ef_0d8969377478_0()
+{
+  TestCommandBegin(__eSet, __cSet, "", "2");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`IgnitionStart = 1;
+      __ReportTableRow(0, "System variable 'IgnitionStart'", __cAOp, 1, "Ign_ON");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", "3");
+  {
+    __Wait("1", (500 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void Tt1kchh8g_MelFunction_BinaryLink_ad8c6d01_514d_475b_b34a_b2f466ac6192_1(int64 count)
+{
+  TestCommandBegin(__eSet, __cSet, "", "4");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`WindowRequest = 2;
+      __ReportTableRow(0, "System variable 'WindowRequest'", __cAOp, 2, "Roll_Down");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+}
+
+void Tt1kchh8g_MelFunction_Check_0e02d411_9bbf_4035_8fe2_73ed8678f2e2_2(int64 count)
+{
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "5");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 100 * 1000000;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`WindowState::`WindowPosition);
+      snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "WindowPosition");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, "__cb1kchh8gCallback0", __cArray, 0) < 0;
+      __tt4cb0 = count;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+        __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, __tt4cb0, "==") == 1;
+        __ReportTableRow(0, "CAN signal 'WindowPosition'", "==", __tt4cb0, "count");
+        __ReportCell(`CAN::dbNode::`Doors::`WindowState::`WindowPosition);
+        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+}
+
+dword __cb1kchh8gCallback0(signal * __cbParam)
+{
+
+  __csr = CheckSignalMatch(__cbParam, __tt4cb0, "==") == 1;
+  return __csr;
+}
+
+void Tt1kchh8g_MelFunction_BinaryLink_e90ef076_623f_41b4_a4f7_2b77c5506fb2_3(int64 count)
+{
+  TestCommandBegin(__eSet, __cSet, "", "6");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`WindowRequest = 0;
+      __ReportTableRow(0, "System variable 'WindowRequest'", __cAOp, 0, "No_Request");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", "7");
+  {
+    __Wait("1", (100 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void Tt1kchh8g_MelFunction_BinaryLink_260b67e7_3780_4744_a579_7a6816aa40b4_4(int64 count)
+{
+  TestCommandBegin(__eSet, __cSet, "", "8");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`WindowRequest = 1;
+      __ReportTableRow(0, "System variable 'WindowRequest'", __cAOp, 1, "Roll_Up");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+}
+
+void Tt1kchh8g_MelFunction_Check_4f212dc7_cdb6_47f2_9f09_e2cf9087294b_5(int64 count)
+{
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "9");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 100 * 1000000;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`WindowState::`WindowPosition);
+      snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "WindowPosition");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, "__cb1kchh8gCallback1", __cArray, 0) < 0;
+      __tt4cb1 = count;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+        __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`WindowState::`WindowPosition, __tt4cb1, "==") == 1;
+        __ReportTableRow(0, "CAN signal 'WindowPosition'", "==", __tt4cb1, "count");
+        __ReportCell(`CAN::dbNode::`Doors::`WindowState::`WindowPosition);
+        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+}
+
+dword __cb1kchh8gCallback1(signal * __cbParam)
+{
+
+  __csr = CheckSignalMatch(__cbParam, __tt4cb1, "==") == 1;
+  return __csr;
+}
+
+void Tt1kchh8g_MelFunction_BinaryLink_a4a60f9b_c7fe_4862_b56a_9a19e8161992_6(int64 count)
+{
+  TestCommandBegin(__eSet, __cSet, "", "10");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`WindowRequest = 0;
+      __ReportTableRow(0, "System variable 'WindowRequest'", __cAOp, 0, "No_Request");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", "11");
+  {
+    __Wait("1", (100 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void Tt1kchh8g_MelFunction_BinaryLink_795f3716_fa2f_46a7_89b8_14346c9f14fa_7()
+{
+  TestCommandBegin(__eSet, __cSet, "", "12");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`IgnitionStart = 0;
+      __ReportTableRow(0, "System variable 'IgnitionStart'", __cAOp, 0, "Ign_OFF");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", "13");
+  {
+    __Wait("1", (500 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void Tt1kchh8g_Tet_TtInit()
+{
+
+}
+
+void Tt1kchh8g_Tet_Tc0()
+{
+  CreateTTEIFFunction("Tt1kchh8g_Tc0", __eTcDef, __eLocal);  
+  CallInterfaceFunction("Test Case 1", __cEmpty , __cEmpty );
+}
+testcase Tt1kchh8g_Tc0()
+{	
+int64 __tt4LoopVar0;
+int64 __tt4LoopVar1;
+
+  SetBreakOnFail(1);
+
+  Tt1kchh8g_MelFunction_BinaryLink_53104f9a_861d_4579_a9ef_0d8969377478_0();
+
+
+  {
+    int64 __tcLocVar0;
+    int64 __tcLocVar1;
+    int64 __tcLocVar2;
+  
+    __tcLocVar0 = 1;
+    __tcLocVar1 = 15;
+    __tcLocVar2 = 1;
+  
+    snprintf(__cArray, 2048, "For (For count=%s..%s, increment=%s)", "1", "15", "1");
+    TestControlStructBegin(__cFor, __cArray, "0");  
+    for(__tt4LoopVar0 = __tcLocVar0; (__tcLocVar2 < 0) ? (CheckSignalMatch(__tt4LoopVar0, __tcLocVar1, ">=" ) == 1) : (CheckSignalMatch(__tt4LoopVar0, __tcLocVar1, "<=") == 1); __tt4LoopVar0 += __tcLocVar2)
+    {
+      if(__LoopIsBlocking())       break;
+  
+      snprintf(__cArray, 2048, "For (For count=%s..%s, increment=%s; current count = %I64d)", "1", "15", "1", __tt4LoopVar0);
+      TestControlStructBegin(__cForIteration, __cArray, "0");
+      Tt1kchh8g_MelFunction_BinaryLink_ad8c6d01_514d_475b_b34a_b2f466ac6192_1(__tt4LoopVar0);
+
+
+      Tt1kchh8g_MelFunction_Check_0e02d411_9bbf_4035_8fe2_73ed8678f2e2_2(__tt4LoopVar0);
+
+
+      Tt1kchh8g_MelFunction_BinaryLink_e90ef076_623f_41b4_a4f7_2b77c5506fb2_3(__tt4LoopVar0);
+
+
+      TestControlStructEnd(__eUndefined);
+    }
+    TestControlStructEnd(__eUndefined);
+  }
+  {
+    int64 __tcLocVar0;
+    int64 __tcLocVar1;
+    int64 __tcLocVar2;
+  
+    __tcLocVar0 = 14;
+    __tcLocVar1 = 0;
+    __tcLocVar2 = -1;
+  
+    snprintf(__cArray, 2048, "For (For count=%s..%s, increment=%s)", "14", "0", "-1");
+    TestControlStructBegin(__cFor, __cArray, "0");  
+    for(__tt4LoopVar1 = __tcLocVar0; (__tcLocVar2 < 0) ? (CheckSignalMatch(__tt4LoopVar1, __tcLocVar1, ">=" ) == 1) : (CheckSignalMatch(__tt4LoopVar1, __tcLocVar1, "<=") == 1); __tt4LoopVar1 += __tcLocVar2)
+    {
+      if(__LoopIsBlocking())       break;
+  
+      snprintf(__cArray, 2048, "For (For count=%s..%s, increment=%s; current count = %I64d)", "14", "0", "-1", __tt4LoopVar1);
+      TestControlStructBegin(__cForIteration, __cArray, "1");
+      Tt1kchh8g_MelFunction_BinaryLink_260b67e7_3780_4744_a579_7a6816aa40b4_4(__tt4LoopVar1);
+
+
+      Tt1kchh8g_MelFunction_Check_4f212dc7_cdb6_47f2_9f09_e2cf9087294b_5(__tt4LoopVar1);
+
+
+      Tt1kchh8g_MelFunction_BinaryLink_a4a60f9b_c7fe_4862_b56a_9a19e8161992_6(__tt4LoopVar1);
+
+
+      TestControlStructEnd(__eUndefined);
+    }
+    TestControlStructEnd(__eUndefined);
+  }
+  Tt1kchh8g_MelFunction_BinaryLink_795f3716_fa2f_46a7_89b8_14346c9f14fa_7();
+
+
+}
+

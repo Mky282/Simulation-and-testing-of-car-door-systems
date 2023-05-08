@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<testtree>
+  <title></title>
+  <version>1</version>
+  <caplfunction>
+    <name>Tttt4n8r2_Tet_TtInit</name>
+  </caplfunction>
+  <testfixture>
+    <title>Test Fixture</title>
+    <navid>8228a11c-411f-4932-a449-3ec88a433a36</navid>
+    <preparation>
+      <title></title>
+      <caplfunction>
+        <name>Tttt4n8r2_Tet_Tf_Preparation0</name>
+      </caplfunction>
+    </preparation>
+    <testcase>
+      <title>ntc_WindowDownUp ()</title>
+      <testcaseid>f2f8c0c2-3bdf-4801-b48b-ad9bdf2ef9d1</testcaseid>
+      <caplfunction>
+        <name>Tttt4n8r2_Tet_CaplTcCall0</name>
+      </caplfunction>
+    </testcase>
+    <testcase>
+      <title>ntc_RequestLock ()</title>
+      <testcaseid>b932475c-1ebc-410e-bd89-a44934c17eb4</testcaseid>
+      <caplfunction>
+        <name>Tttt4n8r2_Tet_CaplTcCall1</name>
+      </caplfunction>
+    </testcase>
+    <testcase>
+      <title>ntc_AutoLock ()</title>
+      <testcaseid>e20757e6-8129-4fa8-93df-cbf6f1c7193b</testcaseid>
+      <caplfunction>
+        <name>Tttt4n8r2_Tet_CaplTcCall2</name>
+      </caplfunction>
+    </testcase>
+  </testfixture>
+</testtree>

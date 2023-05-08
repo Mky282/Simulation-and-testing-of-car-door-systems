@@ -1,0 +1,172 @@
+<TestSequenceDiagram version="1.3" breakOnFailure="true" tcAnUseId="false" tcId="9d91dc0f-5f4a-43ec-a0de-6f3008b0266a" xmlns="http://www.vector-informatik.de/ITE/TDE/TestSequenceDiagram">
+  <Elements>
+    <Start id="43b9d067-f5a4-44c8-8b0b-1a69fe04f1bf" x="124" y="32.8" />
+    <DiagramLink id="5d70e4b9-22e0-4027-84ed-9d5841359987" descr="Preconditions" x="123.2" y="102.4">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <linkcommand>
+          <diagramlink>
+            <title />
+            <diagram>9skhac3p5k03</diagram>
+          </diagramlink>
+        </linkcommand>
+      </testdiagramnode>
+    </DiagramLink>
+    <Check id="7289b6ed-b287-4dc3-b1c9-8ce2ebaee603" descr="Check Unlocked" x="95.2" y="174.4" width="96" height="24">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <awaitvaluematch>
+            <title />
+            <timeout>
+              <value>
+                <const>200</const>
+              </value>
+              <unit>ms</unit>
+            </timeout>
+            <compare>
+              <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Engine|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|EngineStatus|0|False|END_OF_OBJECT_FrameData|Velocity|1|END_OF_OBJECT_|</dbobject>
+              <eq>
+                <const>15</const>
+              </eq>
+            </compare>
+          </awaitvaluematch>
+          <awaitvaluematch>
+            <title />
+            <timeout>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </timeout>
+            <compare>
+              <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+              <eq>
+                <valuetable_entry>Unlocked</valuetable_entry>
+              </eq>
+            </compare>
+          </awaitvaluematch>
+        </sequencecommand>
+      </testdiagramnode>
+    </Check>
+    <Check id="1eb493ce-65c1-4973-9801-069aeccefb47" descr="Check Locked" x="100.8" y="236.8" width="96" height="24">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <awaitvaluematch>
+            <title />
+            <timeout>
+              <value>
+                <const>200</const>
+              </value>
+              <unit>ms</unit>
+            </timeout>
+            <compare>
+              <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Engine|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|EngineStatus|0|False|END_OF_OBJECT_FrameData|Velocity|1|END_OF_OBJECT_|</dbobject>
+              <eq>
+                <const>16</const>
+              </eq>
+            </compare>
+          </awaitvaluematch>
+          <awaitvaluematch>
+            <title />
+            <timeout>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </timeout>
+            <compare>
+              <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+              <eq>
+                <valuetable_entry>Locked</valuetable_entry>
+              </eq>
+            </compare>
+          </awaitvaluematch>
+        </sequencecommand>
+      </testdiagramnode>
+    </Check>
+    <DiagramLink id="abbf2ad4-fa3f-4422-9087-e0413f1bef3f" descr="Postconditions" x="128" y="292.8">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <linkcommand>
+          <diagramlink>
+            <title />
+            <diagram>lfmmr74fb1a0</diagram>
+          </diagramlink>
+        </linkcommand>
+      </testdiagramnode>
+    </DiagramLink>
+    <Finalize id="35e956c1-c37a-4a00-a598-59e43e25775c" x="129.6" y="356.8" />
+  </Elements>
+  <Links>
+    <Transition id="1d8f797c-b048-4e38-81ac-0ab7fadb0551" x="141.2" y="61.6" from="43b9d067-f5a4-44c8-8b0b-1a69fe04f1bf" to="5d70e4b9-22e0-4027-84ed-9d5841359987" fromPort="StartPort" toPort="StartPort" />
+    <Transition id="43a8f5f8-eb38-4146-b0c2-f51f1942dd6b" descr="Set Velocity at 15 kmph" x="141.2" y="137.6" from="5d70e4b9-22e0-4027-84ed-9d5841359987" to="7289b6ed-b287-4dc3-b1c9-8ce2ebaee603" fromPort="StartPort" toPort="CheckPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|LockRq|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>RqToUnlock</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <const>15</const>
+                </source>
+              </assignment>
+            </in>
+          </set>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="4beb29ff-8825-4623-abb8-d5a6eabc6295" descr="Set Velocity at 16 kmph" x="146" y="198.4" from="7289b6ed-b287-4dc3-b1c9-8ce2ebaee603" to="1eb493ce-65c1-4973-9801-069aeccefb47" fromPort="CheckPort" toPort="CheckPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <const>16</const>
+                </source>
+              </assignment>
+            </in>
+          </set>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="eedffe4c-51c6-442b-b905-d9ef9ecbc572" descr="Set Velocity at 0 kmph" x="146" y="260.8" from="1eb493ce-65c1-4973-9801-069aeccefb47" to="abbf2ad4-fa3f-4422-9087-e0413f1bef3f" fromPort="CheckPort" toPort="StartPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <const>0</const>
+                </source>
+              </assignment>
+            </in>
+          </set>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="77abbc4d-79a9-47a6-973e-c7616cdc9ef5" x="146.4" y="328" from="abbf2ad4-fa3f-4422-9087-e0413f1bef3f" to="35e956c1-c37a-4a00-a598-59e43e25775c" fromPort="StartPort" toPort="FinishPort" />
+  </Links>
+</TestSequenceDiagram>

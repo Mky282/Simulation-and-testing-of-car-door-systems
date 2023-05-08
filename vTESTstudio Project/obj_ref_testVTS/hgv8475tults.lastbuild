@@ -1,0 +1,216 @@
+﻿1:19:41 PM # Build of test unit 'ref_tu_SeqDiag' started...
+1:19:41 PM - Build Step #0: BuildPreparation (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------
+1:19:41 PM - ============================== Build Step #0 finished ==============================
+1:19:41 PM - Build Step #1: PreBuildEvent (ArtefactID: -1)
+1:19:41 PM - ---------------------------------------------
+1:19:41 PM - ============================== Build Step #1 finished ==============================
+1:19:41 PM - Build Step #2: BuildTestSequenceDiagramDependencyTree (ArtefactID: -1)
+1:19:41 PM - ----------------------------------------------------------------------
+1:19:41 PM - Test Sequence Diagram Dependencies (direct dependencies only):
+1:19:41 PM -   ref_Preconditions.vtsd
+1:19:41 PM -   ref_Postconditions.vtsd
+1:19:41 PM -   ref_dtc_AutoLock.vtsd --> ref_Preconditions.vtsd ref_Postconditions.vtsd 
+1:19:41 PM -   ref_dtc_WindowDownUp.vtsd --> ref_Preconditions.vtsd ref_Postconditions.vtsd 
+1:19:41 PM -   ref_dtc_RequestLock.vtsd --> ref_Preconditions.vtsd ref_Postconditions.vtsd 
+1:19:41 PM - ============================== Build Step #2 finished ==============================
+1:19:41 PM - Build Step #3: TraceArtefactIds (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------
+1:19:41 PM - Artefact IDs:
+1:19:41 PM -   0 D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Preconditions.vtsd
+1:19:41 PM -   1 D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Postconditions.vtsd
+1:19:41 PM -   2 D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_AutoLock.vtsd
+1:19:41 PM -   3 D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_WindowDownUp.vtsd
+1:19:41 PM -   4 D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_RequestLock.vtsd
+1:19:41 PM - ============================== Build Step #3 finished ==============================
+1:19:41 PM - Build Step #4: FuzzTestDetection (ArtefactID: -1)
+1:19:41 PM - -------------------------------------------------
+1:19:41 PM - ============================== Build Step #4 finished ==============================
+1:19:41 PM - Build Step #5: ValidateTestUnit (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------
+1:19:41 PM # Checking test unit consistency
+1:19:41 PM - ============================== Build Step #5 finished ==============================
+1:19:41 PM - Build Step #6: BuildParameterTypeLibs (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------------
+1:19:41 PM - Nothing to do (no C# documents and no .NET assemblies)
+1:19:41 PM - ============================== Build Step #6 finished ==============================
+1:19:41 PM - Build Step #7: BuildCaplTypeLibs (ArtefactID: -1)
+1:19:41 PM - -------------------------------------------------
+1:19:41 PM - Nothing to do (no C# documents and no .NET assemblies)
+1:19:41 PM - ============================== Build Step #7 finished ==============================
+1:19:41 PM - Build Step #8: BuildSysVarTypeLibs (ArtefactID: -1)
+1:19:41 PM - ---------------------------------------------------
+1:19:41 PM - Nothing to do (no C# documents and no .NET assemblies)
+1:19:41 PM - ============================== Build Step #8 finished ==============================
+1:19:41 PM - Build Step #9: BuildCoTypeLib (ArtefactID: -1)
+1:19:41 PM - ----------------------------------------------
+1:19:41 PM - Nothing to do (no C# documents and no .NET assemblies or no CO-Lib)
+1:19:41 PM - ============================== Build Step #9 finished ==============================
+1:19:41 PM - Build Step #10: ValidateTdeFile (ArtefactID: 0)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - Dependent files (direct and indirect dependencies):
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\hgv8475tults=VP.vvarprop
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Preconditions.vtsd' is up to date (regarding to export table hash)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Preconditions.vtsd' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #10 finished ==============================
+1:19:41 PM - Build Step #11: ValidateTdeFile (ArtefactID: 1)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - Dependent files (direct and indirect dependencies):
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\hgv8475tults=VP.vvarprop
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Postconditions.vtsd' is up to date (regarding to export table hash)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Postconditions.vtsd' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #11 finished ==============================
+1:19:41 PM - Build Step #12: ValidateTdeFile (ArtefactID: 2)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - Dependent files (direct and indirect dependencies):
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Preconditions.vtsd
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Postconditions.vtsd
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\hgv8475tults=VP.vvarprop
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_AutoLock.vtsd' is up to date (regarding to export table hash)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_AutoLock.vtsd' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #12 finished ==============================
+1:19:41 PM - Build Step #13: ValidateTdeFile (ArtefactID: 3)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - Dependent files (direct and indirect dependencies):
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Preconditions.vtsd
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Postconditions.vtsd
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\hgv8475tults=VP.vvarprop
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_WindowDownUp.vtsd' is up to date (regarding to export table hash)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_WindowDownUp.vtsd' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #13 finished ==============================
+1:19:41 PM - Build Step #14: ValidateTdeFile (ArtefactID: 4)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - Dependent files (direct and indirect dependencies):
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Preconditions.vtsd
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_Postconditions.vtsd
+1:19:41 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\hgv8475tults=VP.vvarprop
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_RequestLock.vtsd' is up to date (regarding to export table hash)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_RequestLock.vtsd' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #14 finished ==============================
+1:19:41 PM - Build Step #15: ConditionalBuildAbort (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------------
+1:19:41 PM - All Validation succeeded - continue build.
+1:19:41 PM - ============================== Build Step #15 finished ==============================
+1:19:41 PM - Build Step #16: CompileVtsd2Vtt (ArtefactID: 2)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\ref_dtc_AutoLock.vtsd.vtt' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_AutoLock.vtsd' is up to date (regarding to export table hash)
+1:19:41 PM - ============================== Build Step #16 finished ==============================
+1:19:41 PM - Build Step #20: CompileVtsd2Vtt (ArtefactID: 3)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\ref_dtc_WindowDownUp.vtsd.vtt' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_WindowDownUp.vtsd' is up to date (regarding to export table hash)
+1:19:41 PM - ============================== Build Step #20 finished ==============================
+1:19:41 PM - Build Step #24: CompileVtsd2Vtt (ArtefactID: 4)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\ref_dtc_RequestLock.vtsd.vtt' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_SeqDiag\ref_dtc_RequestLock.vtsd' is up to date (regarding to export table hash)
+1:19:41 PM - ============================== Build Step #24 finished ==============================
+1:19:41 PM - Build Step #17: CollectNavigationInfoTde (ArtefactID: 2)
+1:19:41 PM - --------------------------------------------------------
+1:19:41 PM - ============================== Build Step #17 finished ==============================
+1:19:41 PM - Build Step #18: CompileVtt2Vxtx (ArtefactID: 2)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_AutoLock.vtsd.vxtx' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_AutoLock.vtsd.vxtx.can' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_AutoLock.vtsd.vxtx' is up to date (regarding to export table hash)
+1:19:41 PM - ============================== Build Step #18 finished ==============================
+1:19:41 PM - Build Step #21: CollectNavigationInfoTde (ArtefactID: 3)
+1:19:41 PM - --------------------------------------------------------
+1:19:41 PM - ============================== Build Step #21 finished ==============================
+1:19:41 PM - Build Step #22: CompileVtt2Vxtx (ArtefactID: 3)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_WindowDownUp.vtsd.vxtx' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_WindowDownUp.vtsd.vxtx.can' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_WindowDownUp.vtsd.vxtx' is up to date (regarding to export table hash)
+1:19:41 PM - ============================== Build Step #22 finished ==============================
+1:19:41 PM - Build Step #25: CollectNavigationInfoTde (ArtefactID: 4)
+1:19:41 PM - --------------------------------------------------------
+1:19:41 PM - ============================== Build Step #25 finished ==============================
+1:19:41 PM - Build Step #26: CompileVtt2Vxtx (ArtefactID: 4)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_RequestLock.vtsd.vxtx' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_RequestLock.vtsd.vxtx.can' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_RequestLock.vtsd.vxtx' is up to date (regarding to export table hash)
+1:19:41 PM - ============================== Build Step #26 finished ==============================
+1:19:41 PM - Build Step #19: CompileGeneratedCapl (ArtefactID: 2)
+1:19:41 PM - ----------------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_AutoLock.vtsd.vxtx.cbf' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #19 finished ==============================
+1:19:41 PM - Build Step #23: CompileGeneratedCapl (ArtefactID: 3)
+1:19:41 PM - ----------------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_WindowDownUp.vtsd.vxtx.cbf' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #23 finished ==============================
+1:19:41 PM - Build Step #27: CompileGeneratedCapl (ArtefactID: 4)
+1:19:41 PM - ----------------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\__TsoBuildFiles_\ref_dtc_RequestLock.vtsd.vxtx.cbf' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #27 finished ==============================
+1:19:41 PM - Build Step #28: MoveCSharpXmlDocumentation (ArtefactID: -1)
+1:19:41 PM - -----------------------------------------------------------
+1:19:41 PM - MoveCSharpXmlDocumentation: Skipped because option is deactivated
+1:19:41 PM - ============================== Build Step #28 finished ==============================
+1:19:41 PM - Build Step #29: ValidateTdeFile (ArtefactID: 0)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - ============================== Build Step #29 finished ==============================
+1:19:41 PM - Build Step #30: ValidateTdeFile (ArtefactID: 1)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - ============================== Build Step #30 finished ==============================
+1:19:41 PM - Build Step #31: ValidateTdeFile (ArtefactID: 2)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - ============================== Build Step #31 finished ==============================
+1:19:41 PM - Build Step #32: ValidateTdeFile (ArtefactID: 3)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - ============================== Build Step #32 finished ==============================
+1:19:41 PM - Build Step #33: ValidateTdeFile (ArtefactID: 4)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - ============================== Build Step #33 finished ==============================
+1:19:41 PM - Build Step #34: ValidateIdUsage (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------
+1:19:41 PM - ============================== Build Step #34 finished ==============================
+1:19:41 PM - Build Step #35: ExportTraceabilityMatrix (ArtefactID: -1)
+1:19:41 PM - ---------------------------------------------------------
+1:19:41 PM - ExportTraceabilityMatrix: Skipped because option is deactivated
+1:19:41 PM - ============================== Build Step #35 finished ==============================
+1:19:41 PM - Build Step #36: IncludeSources (ArtefactID: -1)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - IncludeSources: Skipped because option is deactivated
+1:19:41 PM - ============================== Build Step #36 finished ==============================
+1:19:41 PM - Build Step #37: WriteSystemEnvironment (ArtefactID: -1)
+1:19:41 PM - -------------------------------------------------------
+1:19:41 PM - Copy merged Test System Variable file...
+1:19:41 PM - Copy <ag8tr8elp0ju-MTSV> to D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\TestSysVars.vsysvar
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\TestSysVars.vsysvar' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - Add variant property file...
+1:19:41 PM - No variant properties - nothing to do
+1:19:41 PM - ============================== Build Step #37 finished ==============================
+1:19:41 PM - Build Step #38: WriteTUProperties (ArtefactID: -1)
+1:19:41 PM - --------------------------------------------------
+1:19:41 PM - ============================== Build Step #38 finished ==============================
+1:19:41 PM - Build Step #39: WriteTetEntries (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------
+1:19:41 PM - ============================== Build Step #39 finished ==============================
+1:19:41 PM - Build Step #40: FuzzTestNLRemove (ArtefactID: -1)
+1:19:41 PM - -------------------------------------------------
+1:19:41 PM - ============================== Build Step #40 finished ==============================
+1:19:41 PM - Build Step #41: WriteManifest (ArtefactID: -1)
+1:19:41 PM - ----------------------------------------------
+1:19:41 PM - Writing manifest D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_hgv8475tults\ref_tu_SeqDiag.vtumanifest
+1:19:41 PM - ============================== Build Step #41 finished ==============================
+1:19:41 PM - Build Step #46: RemoveOrphanedBuildArtfacts (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------------------
+1:19:41 PM - Removing orphaned build artefacts from the vtuexe's main folder...
+1:19:41 PM - Nothing to do.
+1:19:41 PM - ============================== Build Step #46 finished ==============================
+1:19:41 PM - Build Step #42: WriteMetainfo (ArtefactID: -1)
+1:19:41 PM - ----------------------------------------------
+1:19:41 PM - BUILD TIME excluding ZIP/UNZIP (hours:minutes:seconds:milliseconds): 00:00:00:047
+1:19:41 PM - ============================== Build Step #42 finished ==============================
+1:19:41 PM - Build Step #43: WriteVtuexe (ArtefactID: -1)
+1:19:41 PM - --------------------------------------------
+1:19:41 PM # Test unit created 'D:\vTESTstudio Tutorial\ref_testTFS\TestUnit Build Output\ref_tu_SeqDiag.vtuexe'
+1:19:41 PM - ============================== Build Step #43 finished ==============================
+1:19:41 PM - Build Step #44: PostBuildEvent (ArtefactID: -1)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - ============================== Build Step #44 finished ==============================
+1:19:41 PM - Build Step #45: BuildCleanup (ArtefactID: -1)
+1:19:41 PM - ---------------------------------------------

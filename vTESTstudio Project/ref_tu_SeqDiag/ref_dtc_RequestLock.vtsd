@@ -1,0 +1,111 @@
+<TestSequenceDiagram version="1.3" breakOnFailure="true" tcAnUseId="false" tcId="d8b017e7-3c3d-4042-a604-d371ae15b736" xmlns="http://www.vector-informatik.de/ITE/TDE/TestSequenceDiagram">
+  <Elements>
+    <Start id="43b9d067-f5a4-44c8-8b0b-1a69fe04f1bf" x="100.8" y="35.2" />
+    <DiagramLink id="5d70e4b9-22e0-4027-84ed-9d5841359987" descr="Preconditions" x="99.2" y="100.8">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <linkcommand>
+          <diagramlink>
+            <title />
+            <diagram>9skhac3p5k03</diagram>
+          </diagramlink>
+        </linkcommand>
+      </testdiagramnode>
+    </DiagramLink>
+    <Check id="7289b6ed-b287-4dc3-b1c9-8ce2ebaee603" descr="Check Unlock" x="68" y="167.2" width="96" height="24">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <awaitvaluematch>
+            <title />
+            <timeout>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </timeout>
+            <compare>
+              <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+              <eq>
+                <valuetable_entry>Unlocked</valuetable_entry>
+              </eq>
+            </compare>
+          </awaitvaluematch>
+        </sequencecommand>
+      </testdiagramnode>
+    </Check>
+    <Check id="8e1a6003-814a-4c00-8f80-8e76e1441867" descr="Check Lock" x="66.4" y="234.4" width="96" height="24">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <awaitvaluematch>
+            <title />
+            <timeout>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </timeout>
+            <compare>
+              <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+              <eq>
+                <valuetable_entry>Locked</valuetable_entry>
+              </eq>
+            </compare>
+          </awaitvaluematch>
+        </sequencecommand>
+      </testdiagramnode>
+    </Check>
+    <DiagramLink id="d30e5e24-a0ef-4438-b849-2e17794f12eb" descr="Postconditions" x="102.4" y="295.2">
+      <testdiagramnode version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <linkcommand>
+          <diagramlink>
+            <title />
+            <diagram>lfmmr74fb1a0</diagram>
+          </diagramlink>
+        </linkcommand>
+      </testdiagramnode>
+    </DiagramLink>
+    <Finalize id="35e956c1-c37a-4a00-a598-59e43e25775c" x="100.8" y="359.2" />
+  </Elements>
+  <Links>
+    <Transition id="f0ed0832-44dd-433a-a22d-6080bd8d89da" x="118" y="64" from="43b9d067-f5a4-44c8-8b0b-1a69fe04f1bf" to="5d70e4b9-22e0-4027-84ed-9d5841359987" fromPort="StartPort" toPort="StartPort" />
+    <Transition id="f7ec9683-19a1-45b2-94c1-666cc8b35e54" descr="Request to Unlock" x="117.2" y="136" from="5d70e4b9-22e0-4027-84ed-9d5841359987" to="7289b6ed-b287-4dc3-b1c9-8ce2ebaee603" fromPort="StartPort" toPort="CheckPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|LockRq|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>RqToUnlock</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="9de926a2-1677-49ae-ae30-1b2e413f6573" descr="Request to Lock" x="115.2" y="191.2" from="7289b6ed-b287-4dc3-b1c9-8ce2ebaee603" to="8e1a6003-814a-4c00-8f80-8e76e1441867" fromPort="CheckPort" toPort="CheckPort">
+      <testdiagramnode version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+        <sequencecommand>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|LockRq|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>RqToLock</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+        </sequencecommand>
+      </testdiagramnode>
+    </Transition>
+    <Transition id="c0c2cb72-fcda-4398-89da-0a8e364d34b4" x="120.4" y="258.4" from="8e1a6003-814a-4c00-8f80-8e76e1441867" to="d30e5e24-a0ef-4438-b849-2e17794f12eb" fromPort="CheckPort" toPort="StartPort" />
+    <Transition id="217a4d4d-dc21-4713-834e-0271e998d899" x="118.4" y="330.4" from="d30e5e24-a0ef-4438-b849-2e17794f12eb" to="35e956c1-c37a-4a00-a598-59e43e25775c" fromPort="StartPort" toPort="FinishPort" />
+  </Links>
+</TestSequenceDiagram>

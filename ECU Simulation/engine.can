@@ -1,0 +1,26 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  //The following three messages are defined for transmission
+  message EngineStatus EngineStat;
+  //The following timer is for simulating the cyclic message transmission
+  msTimer msTimer_EngineStatus;
+}
+
+on start
+{
+  setTimerCyclic(msTimer_EngineStatus,100);
+}
+
+on timer msTimer_EngineStatus
+{
+  EngineStat.Velocity = @sysvar::testNS::Velocity;
+  EngineStat.IgnitionStatus = @sysvar::testNS::IgnitionStart;
+  output(EngineStat);
+}
+

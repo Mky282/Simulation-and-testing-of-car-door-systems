@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Vector Test Table Editor-->
+<ttroot version="21" minRequiredVersion="16" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+  <tt>
+    <tf navid="9d91dc0f-5f4a-43ec-a0de-6f3008b0266a">
+      <title>ref_dtc_AutoLock</title>
+      <tc>
+        <title>Test Case 1</title>
+        <tcid>51ab2d1e-8ab9-d3d4-9f4e-c211006c06bf</tcid>
+        <breakonfail>true</breakonfail>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_BinaryLink_53104f9a_861d_4579_a9ef_0d8969377478_0</name>
+        </testdiagramhelperfunction>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_BinaryLink_43a8f5f8_eb38_4146_b0c2_f51f1942dd6b_1</name>
+        </testdiagramhelperfunction>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_Check_7289b6ed_b287_4dc3_b1c9_8ce2ebaee603_2</name>
+        </testdiagramhelperfunction>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_BinaryLink_4beb29ff_8825_4623_abb8_d5a6eabc6295_3</name>
+        </testdiagramhelperfunction>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_Check_1eb493ce_65c1_4973_9801_069aeccefb47_4</name>
+        </testdiagramhelperfunction>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_BinaryLink_eedffe4c_51c6_442b_b905_d9ef9ecbc572_5</name>
+        </testdiagramhelperfunction>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_BinaryLink_795f3716_fa2f_46a7_89b8_14346c9f14fa_6</name>
+        </testdiagramhelperfunction>
+      </tc>
+    </tf>
+  </tt>
+  <ttlib>
+    <ts_definitions />
+    <tc_definitions />
+    <function_definitions>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_53104f9a_861d_4579_a9ef_0d8969377478_0</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|IgnitionStart|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>Ign_ON</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title />
+          <time>
+            <value>
+              <const>500</const>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_43a8f5f8_eb38_4146_b0c2_f51f1942dd6b_1</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|LockRq|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>RqToUnlock</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <const>15</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_Check_7289b6ed_b287_4dc3_b1c9_8ce2ebaee603_2</name>
+        <parameters />
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>200</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Engine|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|EngineStatus|0|False|END_OF_OBJECT_FrameData|Velocity|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <const>15</const>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <valuetable_entry>Unlocked</valuetable_entry>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_4beb29ff_8825_4623_abb8_d5a6eabc6295_3</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <const>16</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_Check_1eb493ce_65c1_4973_9801_069aeccefb47_4</name>
+        <parameters />
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>200</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Engine|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|EngineStatus|0|False|END_OF_OBJECT_FrameData|Velocity|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <const>16</const>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <valuetable_entry>Locked</valuetable_entry>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_eedffe4c_51c6_442b_b905_d9ef9ecbc572_5</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <const>0</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_795f3716_fa2f_46a7_89b8_14346c9f14fa_6</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|IgnitionStart|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>Ign_OFF</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title />
+          <time>
+            <value>
+              <const>500</const>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </testdiagramhelperfunction_definition>
+    </function_definitions>
+  </ttlib>
+</ttroot>

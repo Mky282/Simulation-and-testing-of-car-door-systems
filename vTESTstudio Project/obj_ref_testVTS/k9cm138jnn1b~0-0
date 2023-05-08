@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<tclibrary>
+  <function name="cf_testPreparation" id="1267178240" comment="" signature="void cf_testPreparation()" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CAPL\ref_CAPL_FuncTests.can" SourceFilePersistencyGuid="v8micd48v28v" IsPrivate="false" IsNetSignatureAndDefinedInExternalDll="true">
+    <document_position><![CDATA[<OffsetDocumentPosition xmlns:SerializedType="Vector.ITE.Document.OffsetDocumentPosition"><Offset>117</Offset></OffsetDocumentPosition>]]></document_position>
+    <implementation_language lang="CAPL" />
+  </function>
+  <testcase name="ctc_WindowDownUp" id="1433744515" comment="" signature="testcase ctc_WindowDownUp()" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CAPL\ref_CAPL_FuncTests.can" SourceFilePersistencyGuid="v8micd48v28v" IsPrivate="false" IsNetSignatureAndDefinedInExternalDll="true">
+    <document_position><![CDATA[<OffsetDocumentPosition xmlns:SerializedType="Vector.ITE.Document.OffsetDocumentPosition"><Offset>500</Offset></OffsetDocumentPosition>]]></document_position>
+    <implementation_language lang="CAPL" />
+  </testcase>
+  <testcase name="ctc_RequestLock" id="1498258184" comment="" signature="testcase ctc_RequestLock()" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CAPL\ref_CAPL_FuncTests.can" SourceFilePersistencyGuid="v8micd48v28v" IsPrivate="false" IsNetSignatureAndDefinedInExternalDll="true">
+    <document_position><![CDATA[<OffsetDocumentPosition xmlns:SerializedType="Vector.ITE.Document.OffsetDocumentPosition"><Offset>3363</Offset></OffsetDocumentPosition>]]></document_position>
+    <implementation_language lang="CAPL" />
+  </testcase>
+  <testcase name="ctc_AutoLock" id="3380612632" comment="" signature="testcase ctc_AutoLock()" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CAPL\ref_CAPL_FuncTests.can" SourceFilePersistencyGuid="v8micd48v28v" IsPrivate="false" IsNetSignatureAndDefinedInExternalDll="true">
+    <document_position><![CDATA[<OffsetDocumentPosition xmlns:SerializedType="Vector.ITE.Document.OffsetDocumentPosition"><Offset>5233</Offset></OffsetDocumentPosition>]]></document_position>
+    <implementation_language lang="CAPL" />
+  </testcase>
+</tclibrary>

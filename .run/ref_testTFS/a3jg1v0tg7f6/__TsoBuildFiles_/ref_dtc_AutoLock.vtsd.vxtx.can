@@ -1,0 +1,328 @@
+﻿/* !Encoding: 65001  */
+includes
+{
+  #include "__VariablesLib.cin"
+  #include "__CaplGeneratorLib.cin"
+  #include "__CANoeReportFuntionsLib.cin"
+}
+
+variables
+{
+  // Global variables defined within this CAPL file
+}
+
+void Ttdhqu412_MelFunction_BinaryLink_53104f9a_861d_4579_a9ef_0d8969377478_0()
+{
+  TestCommandBegin(__eSet, __cSet, "", "0");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`IgnitionStart = 1;
+      __ReportTableRow(0, "System variable 'IgnitionStart'", __cAOp, 1, "Ign_ON");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", "1");
+  {
+    __Wait("1", (500 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void Ttdhqu412_MelFunction_BinaryLink_43a8f5f8_eb38_4146_b0c2_f51f1942dd6b_1()
+{
+  TestCommandBegin(__eSet, __cSet, "", "2");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`LockRq = 1;
+      __ReportTableRow(0, "System variable 'LockRq'", __cAOp, 1, "RqToUnlock");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eSet, __cSet, "", "3");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`Velocity = 15;
+      __ReportTableRow(0, "System variable 'Velocity'", __cAOp, 15, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+}
+
+void Ttdhqu412_MelFunction_Check_7289b6ed_b287_4dc3_b1c9_8ce2ebaee603_2()
+{
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "4");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 200 * 1000000;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Engine::`EngineStatus::`Velocity);
+      snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "Velocity");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, "__cbdhqu412Callback0", __cArray, 0) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+        __csr = CheckSignalMatch(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, 15, "==") == 1;
+        __ReportTableRow(0, "CAN signal 'Velocity'", "==", 15, "");
+        __ReportCell(`CAN::dbNode::`Engine::`EngineStatus::`Velocity);
+        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "5");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 100 * 1000000;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`LockingState::`LockState);
+      snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "LockState");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`LockingState::`LockState, "__cbdhqu412Callback1", __cArray, 0) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+        __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`LockingState::`LockState, 1, "==") == 1;
+        __ReportTableRow(0, "CAN signal 'LockState'", "==", 1, "Unlocked");
+        __ReportCell(`CAN::dbNode::`Doors::`LockingState::`LockState);
+        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+}
+
+dword __cbdhqu412Callback0(signal * __cbParam)
+{
+
+  __csr = CheckSignalMatch(__cbParam, 15, "==") == 1;
+  return __csr;
+}
+dword __cbdhqu412Callback1(signal * __cbParam)
+{
+
+  __csr = CheckSignalMatch(__cbParam, 1, "==") == 1;
+  return __csr;
+}
+
+void Ttdhqu412_MelFunction_BinaryLink_4beb29ff_8825_4623_abb8_d5a6eabc6295_3()
+{
+  TestCommandBegin(__eSet, __cSet, "", "6");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`Velocity = 16;
+      __ReportTableRow(0, "System variable 'Velocity'", __cAOp, 16, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+}
+
+void Ttdhqu412_MelFunction_Check_1eb493ce_65c1_4973_9801_069aeccefb47_4()
+{
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "7");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 200 * 1000000;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Engine::`EngineStatus::`Velocity);
+      snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "Velocity");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, "__cbdhqu412Callback2", __cArray, 0) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+        __csr = CheckSignalMatch(`CAN::dbNode::`Engine::`EngineStatus::`Velocity, 16, "==") == 1;
+        __ReportTableRow(0, "CAN signal 'Velocity'", "==", 16, "");
+        __ReportCell(`CAN::dbNode::`Engine::`EngineStatus::`Velocity);
+        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eAwaitValueMatch, __cAwaitValueMatch, "", "8");
+  {
+  
+    dword __signalTimes[1];
+    int64 __time;
+    long __setFailed;
+    __setFailed = 0;
+    __time = 100 * 1000000;
+    if (__time < 0)
+    {
+      testStepErrorInTestSystem(0, "1", "Unable to wait for %.3f %s. Please check input parameter.", __time / ((float)1000000), "ms");
+    }
+    else
+    {
+      __signalTimes[0] = getSignalTime(`CAN::dbNode::`Doors::`LockingState::`LockState);
+      snprintf(__cArray, elCount(__cArray), "CAN signal '%s'", "LockState");
+      __setFailed |= testJoinSignal(`CAN::dbNode::`Doors::`LockingState::`LockState, "__cbdhqu412Callback3", __cArray, 0) < 0;
+      if (__setFailed != 0)
+      {
+        testStepErrorInTestSystem(0, "1", "Unable to set value condition.");
+      }
+      else
+      {
+        __bVerdict = testWaitForAllJoinedEventsNS(__time) > 0;
+        __ReportTableHead5Columns("Waited for occurrence of 1 value condition.", __cTSym, __cTOp, __cRefVal, __cActual, __cRes);
+        __csr = CheckSignalMatch(`CAN::dbNode::`Doors::`LockingState::`LockState, 0, "==") == 1;
+        __ReportTableRow(0, "CAN signal 'LockState'", "==", 0, "Locked");
+        __ReportCell(`CAN::dbNode::`Doors::`LockingState::`LockState);
+        __ReportCellResult(__csr, __ePassFail);
+        __ReportTableEndVerdict("1", __bVerdict);
+      }
+    }
+  }
+  TestCommandEnd();
+
+}
+
+dword __cbdhqu412Callback2(signal * __cbParam)
+{
+
+  __csr = CheckSignalMatch(__cbParam, 16, "==") == 1;
+  return __csr;
+}
+dword __cbdhqu412Callback3(signal * __cbParam)
+{
+
+  __csr = CheckSignalMatch(__cbParam, 0, "==") == 1;
+  return __csr;
+}
+
+void Ttdhqu412_MelFunction_BinaryLink_eedffe4c_51c6_442b_b905_d9ef9ecbc572_5()
+{
+  TestCommandBegin(__eSet, __cSet, "", "9");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`Velocity = 0;
+      __ReportTableRow(0, "System variable 'Velocity'", __cAOp, 0, "");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+}
+
+void Ttdhqu412_MelFunction_BinaryLink_795f3716_fa2f_46a7_89b8_14346c9f14fa_6()
+{
+  TestCommandBegin(__eSet, __cSet, "", "10");
+  {
+  
+    __ReportTableHead3Columns(__cSetCaption , __cTSym, __cTOp, __cAssigned); 
+    {
+      @sysvarInt::`testNS::`IgnitionStart = 0;
+      __ReportTableRow(0, "System variable 'IgnitionStart'", __cAOp, 0, "Ign_OFF");
+    }
+    __ReportTableEndTestStep("1");
+  }
+  TestCommandEnd();
+
+  TestCommandBegin(__eWait, __cWait, "", "11");
+  {
+    __Wait("1", (500 * 1000000), 1000000, "");
+  }
+  TestCommandEnd();
+
+}
+
+void Ttdhqu412_Tet_TtInit()
+{
+
+}
+
+void Ttdhqu412_Tet_Tc0()
+{
+  CreateTTEIFFunction("Ttdhqu412_Tc0", __eTcDef, __eLocal);  
+  CallInterfaceFunction("Test Case 1", __cEmpty , __cEmpty );
+}
+testcase Ttdhqu412_Tc0()
+{	
+  SetBreakOnFail(1);
+
+  Ttdhqu412_MelFunction_BinaryLink_53104f9a_861d_4579_a9ef_0d8969377478_0();
+
+
+  Ttdhqu412_MelFunction_BinaryLink_43a8f5f8_eb38_4146_b0c2_f51f1942dd6b_1();
+
+
+  Ttdhqu412_MelFunction_Check_7289b6ed_b287_4dc3_b1c9_8ce2ebaee603_2();
+
+
+  Ttdhqu412_MelFunction_BinaryLink_4beb29ff_8825_4623_abb8_d5a6eabc6295_3();
+
+
+  Ttdhqu412_MelFunction_Check_1eb493ce_65c1_4973_9801_069aeccefb47_4();
+
+
+  Ttdhqu412_MelFunction_BinaryLink_eedffe4c_51c6_442b_b905_d9ef9ecbc572_5();
+
+
+  Ttdhqu412_MelFunction_BinaryLink_795f3716_fa2f_46a7_89b8_14346c9f14fa_6();
+
+
+}
+

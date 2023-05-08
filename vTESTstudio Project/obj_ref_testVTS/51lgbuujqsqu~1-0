@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<tclibrary>
+  <testcase name="ntc_WindowDownUp" id="1362303372" comment="" signature="ntc_WindowDownUp()" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs" SourceFilePersistencyGuid="hpvt6onts52u" IsPrivate="false" IsNetSignatureAndDefinedInExternalDll="false" assembly="ref_tu_CSharp" class="MyTestClass">
+    <return type="void" raw_type="void" />
+    <document_position><![CDATA[<OffsetDocumentPosition xmlns:SerializedType="Vector.ITE.Document.OffsetDocumentPosition"><Offset>517</Offset></OffsetDocumentPosition>]]></document_position>
+    <implementation_language lang="CS" />
+  </testcase>
+  <testcase name="ntc_RequestLock" id="1967082793" comment="" signature="ntc_RequestLock()" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs" SourceFilePersistencyGuid="hpvt6onts52u" IsPrivate="false" IsNetSignatureAndDefinedInExternalDll="false" assembly="ref_tu_CSharp" class="MyTestClass">
+    <return type="void" raw_type="void" />
+    <document_position><![CDATA[<OffsetDocumentPosition xmlns:SerializedType="Vector.ITE.Document.OffsetDocumentPosition"><Offset>3678</Offset></OffsetDocumentPosition>]]></document_position>
+    <implementation_language lang="CS" />
+  </testcase>
+  <testcase name="ntc_AutoLock" id="565935543" comment="" signature="ntc_AutoLock()" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs" SourceFilePersistencyGuid="hpvt6onts52u" IsPrivate="false" IsNetSignatureAndDefinedInExternalDll="false" assembly="ref_tu_CSharp" class="MyTestClass">
+    <return type="void" raw_type="void" />
+    <document_position><![CDATA[<OffsetDocumentPosition xmlns:SerializedType="Vector.ITE.Document.OffsetDocumentPosition"><Offset>5739</Offset></OffsetDocumentPosition>]]></document_position>
+    <implementation_language lang="CS" />
+  </testcase>
+  <testfunction name="nf_Preparation" id="767745391" comment="" signature="nf_Preparation()" file="D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs" SourceFilePersistencyGuid="hpvt6onts52u" IsPrivate="false" IsNetSignatureAndDefinedInExternalDll="false" assembly="ref_tu_CSharp" class="MyTestClass">
+    <return type="void" raw_type="void" />
+    <document_position><![CDATA[<OffsetDocumentPosition xmlns:SerializedType="Vector.ITE.Document.OffsetDocumentPosition"><Offset>8388</Offset></OffsetDocumentPosition>]]></document_position>
+    <implementation_language lang="CS" />
+  </testfunction>
+</tclibrary>

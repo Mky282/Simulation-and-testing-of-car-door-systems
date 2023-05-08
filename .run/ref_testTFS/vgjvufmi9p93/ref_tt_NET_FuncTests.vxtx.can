@@ -1,0 +1,55 @@
+﻿/* !Encoding: 65001  */
+includes
+{
+  #include "__VariablesLib.cin"
+  #include "__CaplGeneratorLib.cin"
+  #include "__CANoeReportFuntionsLib.cin"
+}
+
+variables
+{
+  // Global variables defined within this CAPL file
+}
+
+void Ttnni4a8m_Tet_TtInit()
+{
+
+}
+
+void Ttnni4a8m_Tet_Tf_Preparation0()
+{
+  TestPreparationBegin();
+  {
+    {
+      TestGetTestClientNameCIdentifier(__cArray, 8192);
+      CreateNetIFFunction(__cArray, "MyTestClass", "nf_Preparation", __eTestFct);
+      CallInterfaceFunction("nf_Preparation ()", __cEmpty, "0");
+    }
+
+
+  }
+  TestPreparationEnd();
+}
+
+
+void Ttnni4a8m_Tet_CaplTcCall0()
+{
+  TestGetTestClientNameCIdentifier(__cArray, 8192);
+  CreateNetIFFunction(__cArray, "MyTestClass", "ntc_WindowDownUp", __eTcDef);
+  CallInterfaceFunction(__cEmpty , "", __cEmpty );
+}
+
+void Ttnni4a8m_Tet_CaplTcCall1()
+{
+  TestGetTestClientNameCIdentifier(__cArray, 8192);
+  CreateNetIFFunction(__cArray, "MyTestClass", "ntc_RequestLock", __eTcDef);
+  CallInterfaceFunction(__cEmpty , "", __cEmpty );
+}
+
+void Ttnni4a8m_Tet_CaplTcCall2()
+{
+  TestGetTestClientNameCIdentifier(__cArray, 8192);
+  CreateNetIFFunction(__cArray, "MyTestClass", "ntc_AutoLock", __eTcDef);
+  CallInterfaceFunction(__cEmpty , "", __cEmpty );
+}
+

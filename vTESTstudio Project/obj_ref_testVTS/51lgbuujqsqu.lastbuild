@@ -1,0 +1,146 @@
+﻿1:19:39 PM # Build of test unit 'ref_tu_CSharp' started...
+1:19:39 PM - Build Step #0: BuildPreparation (ArtefactID: -1)
+1:19:39 PM - ------------------------------------------------
+1:19:39 PM - ============================== Build Step #0 finished ==============================
+1:19:39 PM - Build Step #1: PreBuildEvent (ArtefactID: -1)
+1:19:39 PM - ---------------------------------------------
+1:19:39 PM - ============================== Build Step #1 finished ==============================
+1:19:39 PM - Build Step #2: BuildTestSequenceDiagramDependencyTree (ArtefactID: -1)
+1:19:39 PM - ----------------------------------------------------------------------
+1:19:39 PM - Nothing to do (no Test Sequence Diagram Files)
+1:19:39 PM - ============================== Build Step #2 finished ==============================
+1:19:39 PM - Build Step #3: TraceArtefactIds (ArtefactID: -1)
+1:19:39 PM - ------------------------------------------------
+1:19:39 PM - Artefact IDs:
+1:19:39 PM -   0 D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_tt_NET_FuncTests.vtt
+1:19:39 PM -   1 D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs
+1:19:39 PM - ============================== Build Step #3 finished ==============================
+1:19:39 PM - Build Step #4: FuzzTestDetection (ArtefactID: -1)
+1:19:39 PM - -------------------------------------------------
+1:19:39 PM - ============================== Build Step #4 finished ==============================
+1:19:39 PM - Build Step #5: ValidateTestUnit (ArtefactID: -1)
+1:19:39 PM - ------------------------------------------------
+1:19:39 PM # Checking test unit consistency
+1:19:39 PM - ============================== Build Step #5 finished ==============================
+1:19:39 PM - Build Step #6: BuildParameterTypeLibs (ArtefactID: -1)
+1:19:39 PM - ------------------------------------------------------
+1:19:39 PM - Output file: D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\51lgbuujqsqu_PA.dll
+1:19:39 PM - Source files:
+1:19:39 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\51lgbuujqsqu=VP.vvarprop
+1:19:39 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\51lgbuujqsqu_PA.dll' is up to date (regarding to dependencies in MAKE database)
+1:19:39 PM - ============================== Build Step #6 finished ==============================
+1:19:39 PM - Build Step #7: BuildCaplTypeLibs (ArtefactID: -1)
+1:19:39 PM - -------------------------------------------------
+1:19:39 PM - Output file: D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\51lgbuujqsqu_CA.dll
+1:19:39 PM - Source files:
+1:19:39 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\51lgbuujqsqu_CA.dll' is up to date (regarding to export table hash)
+1:19:39 PM - ============================== Build Step #7 finished ==============================
+1:19:39 PM - Build Step #8: BuildSysVarTypeLibs (ArtefactID: -1)
+1:19:39 PM - ---------------------------------------------------
+1:19:39 PM - Output file: D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\m8dh3u5eobov_TestSysVars.dll
+1:19:39 PM - Source files:
+1:19:39 PM - D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\ag8tr8elp0ju-MTSV
+1:19:39 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\m8dh3u5eobov_TestSysVars.dll' is up to date (regarding to dependencies in MAKE database)
+1:19:39 PM - ============================== Build Step #8 finished ==============================
+1:19:39 PM - Build Step #9: BuildCoTypeLib (ArtefactID: -1)
+1:19:39 PM - ----------------------------------------------
+1:19:39 PM - Nothing to do (no C# documents and no .NET assemblies or no CO-Lib)
+1:19:39 PM - ============================== Build Step #9 finished ==============================
+1:19:39 PM - Build Step #10: ValidateCSharp (ArtefactID: -1)
+1:19:39 PM - -----------------------------------------------
+1:19:39 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\ref_tu_CSharp.dll' is up to date (regarding to export table hash)
+1:19:39 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\ref_tu_CSharp.dll' is outdated
+1:19:39 PM - Reason: Last write time of 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs' (08-Oct-20 1:19:19 PM) differs from 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs' (24-Jun-20 11:43:33 AM) stored in MAKE database
+1:19:39 PM # Compiling C# files in test unit 'ref_tu_CSharp'
+1:19:40 PM #  Vector.PostCompiler - Aspect weaving .NET Assembly post-compiler
+1:19:40 PM #  Copyright © Vector Informatik GmbH 2015
+1:19:40 PM #  Post compilation complete
+1:19:40 PM # Compilation succeeded (1:19:40 PM) -- 0 errors, 0 warnings
+1:19:40 PM - ============================== Build Step #10 finished ==============================
+1:19:40 PM - Build Step #11: ValidateTteFile (ArtefactID: 0)
+1:19:40 PM - -----------------------------------------------
+1:19:40 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_tt_NET_FuncTests.vtt' is up to date (regarding to export table hash)
+1:19:40 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_tt_NET_FuncTests.vtt' is up to date (regarding to dependencies in MAKE database)
+1:19:40 PM - ============================== Build Step #11 finished ==============================
+1:19:40 PM - Build Step #12: ConditionalBuildAbort (ArtefactID: -1)
+1:19:40 PM - ------------------------------------------------------
+1:19:40 PM - All Validation succeeded - continue build.
+1:19:40 PM - ============================== Build Step #12 finished ==============================
+1:19:40 PM - Build Step #13: CollectNavigationInfo (ArtefactID: 0)
+1:19:40 PM - -----------------------------------------------------
+1:19:40 PM - ============================== Build Step #13 finished ==============================
+1:19:40 PM - Build Step #14: CompileVtt2Vxtx (ArtefactID: 0)
+1:19:40 PM - -----------------------------------------------
+1:19:40 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\ref_tt_NET_FuncTests.vxtx' is up to date (regarding to dependencies in MAKE database)
+1:19:40 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\ref_tt_NET_FuncTests.vxtx.can' is up to date (regarding to dependencies in MAKE database)
+1:19:40 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\ref_tt_NET_FuncTests.vxtx' is up to date (regarding to export table hash)
+1:19:40 PM - ============================== Build Step #14 finished ==============================
+1:19:41 PM - Build Step #15: CompileGeneratedCapl (ArtefactID: 0)
+1:19:41 PM - ----------------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__TsoBuildFiles_\ref_tt_NET_FuncTests.vxtx.cbf' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - ============================== Build Step #15 finished ==============================
+1:19:41 PM - Build Step #16: MoveCSharpXmlDocumentation (ArtefactID: -1)
+1:19:41 PM - -----------------------------------------------------------
+1:19:41 PM - MoveCSharpXmlDocumentation: Skipped because option is deactivated
+1:19:41 PM - ============================== Build Step #16 finished ==============================
+1:19:41 PM - Build Step #17: CopyCSharpFile (ArtefactID: 1)
+1:19:41 PM - ----------------------------------------------
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\ref_NET_FuncTests.cs' is up to date (regarding to export table hash)
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\ref_NET_FuncTests.cs' is outdated
+1:19:41 PM - Reason: Last write time of 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs' (08-Oct-20 1:19:19 PM) differs from dependency relation to 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs' (24-Jun-20 11:43:33 AM) stored in MAKE database
+1:19:41 PM - Copied file 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\ref_tu_CSharp\ref_NET_FuncTests.cs' to 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\ref_NET_FuncTests.cs'
+1:19:41 PM - Export table file 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\51lgbuujqsqu~1-0.' not copied to 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\__ExpTbl_\ref_tu_CSharp_CS.export.xml' because export tables have not changed
+1:19:41 PM - ============================== Build Step #17 finished ==============================
+1:19:41 PM - Build Step #18: ValidateTteFile (ArtefactID: 0)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - ============================== Build Step #18 finished ==============================
+1:19:41 PM - Build Step #19: ValidateIdUsage (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------
+1:19:41 PM - ============================== Build Step #19 finished ==============================
+1:19:41 PM - Build Step #20: ExportTraceabilityMatrix (ArtefactID: -1)
+1:19:41 PM - ---------------------------------------------------------
+1:19:41 PM - ExportTraceabilityMatrix: Skipped because option is deactivated
+1:19:41 PM - ============================== Build Step #20 finished ==============================
+1:19:41 PM - Build Step #21: IncludeSources (ArtefactID: -1)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - IncludeSources: Skipped because option is deactivated
+1:19:41 PM - ============================== Build Step #21 finished ==============================
+1:19:41 PM - Build Step #22: WriteSystemEnvironment (ArtefactID: -1)
+1:19:41 PM - -------------------------------------------------------
+1:19:41 PM - Copy merged Test System Variable file...
+1:19:41 PM - Copy <ag8tr8elp0ju-MTSV> to D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\TestSysVars.vsysvar
+1:19:41 PM - 'D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\TestSysVars.vsysvar' is up to date (regarding to dependencies in MAKE database)
+1:19:41 PM - Add variant property file...
+1:19:41 PM - No variant properties - nothing to do
+1:19:41 PM - ============================== Build Step #22 finished ==============================
+1:19:41 PM - Build Step #23: WriteTUProperties (ArtefactID: -1)
+1:19:41 PM - --------------------------------------------------
+1:19:41 PM - ============================== Build Step #23 finished ==============================
+1:19:41 PM - Build Step #24: WriteTetEntries (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------
+1:19:41 PM - ============================== Build Step #24 finished ==============================
+1:19:41 PM - Build Step #25: FuzzTestNLRemove (ArtefactID: -1)
+1:19:41 PM - -------------------------------------------------
+1:19:41 PM - ============================== Build Step #25 finished ==============================
+1:19:41 PM - Build Step #26: WriteManifest (ArtefactID: -1)
+1:19:41 PM - ----------------------------------------------
+1:19:41 PM - Writing manifest D:\vTESTstudio Tutorial\ref_testTFS\vTESTstudio Project\obj_ref_testVTS\bin_51lgbuujqsqu\ref_tu_CSharp.vtumanifest
+1:19:41 PM - ============================== Build Step #26 finished ==============================
+1:19:41 PM - Build Step #31: RemoveOrphanedBuildArtfacts (ArtefactID: -1)
+1:19:41 PM - ------------------------------------------------------------
+1:19:41 PM - Removing orphaned build artefacts from the vtuexe's main folder...
+1:19:41 PM - Nothing to do.
+1:19:41 PM - ============================== Build Step #31 finished ==============================
+1:19:41 PM - Build Step #27: WriteMetainfo (ArtefactID: -1)
+1:19:41 PM - ----------------------------------------------
+1:19:41 PM - BUILD TIME excluding ZIP/UNZIP (hours:minutes:seconds:milliseconds): 00:00:01:242
+1:19:41 PM - ============================== Build Step #27 finished ==============================
+1:19:41 PM - Build Step #28: WriteVtuexe (ArtefactID: -1)
+1:19:41 PM - --------------------------------------------
+1:19:41 PM # Test unit created 'D:\vTESTstudio Tutorial\ref_testTFS\TestUnit Build Output\ref_tu_CSharp.vtuexe'
+1:19:41 PM - ============================== Build Step #28 finished ==============================
+1:19:41 PM - Build Step #29: PostBuildEvent (ArtefactID: -1)
+1:19:41 PM - -----------------------------------------------
+1:19:41 PM - ============================== Build Step #29 finished ==============================
+1:19:41 PM - Build Step #30: BuildCleanup (ArtefactID: -1)
+1:19:41 PM - ---------------------------------------------

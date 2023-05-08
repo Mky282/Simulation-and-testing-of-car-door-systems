@@ -1,0 +1,7 @@
+"13:23:27.379";"Starting build";"mode = make"
+"13:23:27.383";"Load test unit";""
+"13:23:27.453";"Initialization of parameter scopes";""
+"13:23:27.529";"Load VTT Tree";"D:\ref_testTFS\.run\ref_testTFS\a3jg1v0tg7f6\ref_dtc_AutoLock.vtsd.vtt"
+"13:23:27.535";"Load VTT Tree";"D:\ref_testTFS\.run\ref_testTFS\a3jg1v0tg7f6\ref_dtc_WindowDownUp.vtsd.vtt"
+"13:23:27.540";"Load VTT Tree";"D:\ref_testTFS\.run\ref_testTFS\a3jg1v0tg7f6\ref_dtc_RequestLock.vtsd.vtt"
+"13:23:27.549";"Build finished";"result = OK"

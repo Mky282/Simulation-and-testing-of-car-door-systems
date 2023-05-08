@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Vector Test Table Editor-->
+<ttroot version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0" minRequiredVersion="18">
+  <tt>
+    <tf navid="1bb7ccbf-93b0-41e1-9c2d-243fe5437801">
+      <title />
+      <preparation>
+        <title />
+        <ttfunction>
+          <title />
+          <name>tf_TestPreparation</name>
+        </ttfunction>
+      </preparation>
+      <tc>
+        <title>ttc_WindowDownUpTest</title>
+        <active>true</active>
+        <tcid>21c6cef2-1556-425a-adde-72ab10d731f8</tcid>
+        <preparation>
+          <title />
+          <ttfunction>
+            <title />
+            <name>tf_Preconditions</name>
+          </ttfunction>
+        </preparation>
+        <for>
+          <title />
+          <loopvar>count</loopvar>
+          <loopvartype>int64</loopvartype>
+          <startvalue>
+            <const>1</const>
+          </startvalue>
+          <stopvalue>
+            <const>15</const>
+          </stopvalue>
+          <increment>
+            <const>1</const>
+          </increment>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>Roll_Down</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+          <awaitvaluematch>
+            <title />
+            <timeout>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </timeout>
+            <compare>
+              <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|WindowState|4|False|END_OF_OBJECT_FrameData|WindowPosition|1|END_OF_OBJECT_|</dbobject>
+              <eq>
+                <variable>count</variable>
+              </eq>
+            </compare>
+          </awaitvaluematch>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>No_Request</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+          <wait>
+            <title />
+            <time>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </time>
+          </wait>
+        </for>
+        <for>
+          <title />
+          <loopvar>count</loopvar>
+          <loopvartype>int64</loopvartype>
+          <startvalue>
+            <const>14</const>
+          </startvalue>
+          <stopvalue>
+            <const>0</const>
+          </stopvalue>
+          <increment>
+            <const>-1</const>
+          </increment>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>Roll_Up</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+          <awaitvaluematch>
+            <title />
+            <timeout>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </timeout>
+            <compare>
+              <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|WindowState|4|False|END_OF_OBJECT_FrameData|WindowPosition|1|END_OF_OBJECT_|</dbobject>
+              <eq>
+                <variable>count</variable>
+              </eq>
+            </compare>
+          </awaitvaluematch>
+          <set>
+            <title />
+            <in>
+              <assignment>
+                <sink>
+                  <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+                </sink>
+                <source>
+                  <valuetable_entry>No_Request</valuetable_entry>
+                </source>
+              </assignment>
+            </in>
+          </set>
+          <wait>
+            <title />
+            <time>
+              <value>
+                <const>100</const>
+              </value>
+              <unit>ms</unit>
+            </time>
+          </wait>
+        </for>
+        <completion>
+          <title />
+          <ttfunction>
+            <title />
+            <name>tf_PostConditions</name>
+          </ttfunction>
+        </completion>
+      </tc>
+      <tc>
+        <title>ttc_RequestLock</title>
+        <tcid>37df3a1a-e907-43db-8a8c-d0b7216f51ba</tcid>
+        <preparation>
+          <title />
+          <ttfunction>
+            <title />
+            <name>tf_Preconditions</name>
+          </ttfunction>
+        </preparation>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|LockRq|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>RqToUnlock</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <valuetable_entry>Unlocked</valuetable_entry>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|LockRq|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>RqToLock</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <valuetable_entry>Locked</valuetable_entry>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+        <completion>
+          <title />
+          <ttfunction>
+            <title />
+            <name>tf_PostConditions</name>
+          </ttfunction>
+        </completion>
+      </tc>
+      <tc>
+        <title>ttc_AutoLock</title>
+        <tcid>51364c3f-57a2-4f16-a368-05c6449a325e</tcid>
+        <preparation>
+          <title />
+          <ttfunction>
+            <title />
+            <name>tf_Preconditions</name>
+          </ttfunction>
+        </preparation>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|LockRq|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>RqToUnlock</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <const>15</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>200</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Engine|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|EngineStatus|0|False|END_OF_OBJECT_FrameData|Velocity|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <const>15</const>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <valuetable_entry>Unlocked</valuetable_entry>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <const>16</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>200</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Engine|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|EngineStatus|0|False|END_OF_OBJECT_FrameData|Velocity|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <const>16</const>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|LockingState|2|False|END_OF_OBJECT_FrameData|LockState|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <valuetable_entry>Locked</valuetable_entry>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|Velocity|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <const>0</const>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <completion>
+          <title />
+          <ttfunction>
+            <title />
+            <name>tf_PostConditions</name>
+          </ttfunction>
+        </completion>
+      </tc>
+    </tf>
+  </tt>
+  <ttlib>
+    <ts_definitions />
+    <tc_definitions />
+    <function_definitions>
+      <function_definition navid="88d8e4c5-eb80-4625-b44c-181340628358">
+        <name>tf_TestPreparation</name>
+        <parameters />
+        <caplinline>
+          <title />
+          <code>TestReportAddEngineerInfo("Company", "Vector Informatik Pvt. Ltd.");
+TestReportAddEngineerInfo("Tester name", "First tester");
+TestReportAddSetupInfo("CANoe", "Version 13.0");
+TestReportAddSetupInfo("vTESTstudio", "Version 5.0");
+TestReportAddSUTInfo ("SUT", "Doors ECU");
+</code>
+        </caplinline>
+      </function_definition>
+      <function_definition navid="7f1d7ccf-eccb-42ee-a435-2d56a0a0cfdd">
+        <name>tf_Preconditions</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|IgnitionStart|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>Ign_ON</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title />
+          <time>
+            <value>
+              <const>500</const>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </function_definition>
+      <function_definition navid="9b529bf0-79f6-459b-b3fa-2de10cae1524">
+        <name>tf_PostConditions</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|IgnitionStart|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>Ign_OFF</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title />
+          <time>
+            <value>
+              <const>500</const>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </function_definition>
+    </function_definitions>
+  </ttlib>
+</ttroot>

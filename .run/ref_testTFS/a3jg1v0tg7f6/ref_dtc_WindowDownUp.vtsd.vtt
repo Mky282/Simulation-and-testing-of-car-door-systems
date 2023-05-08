@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Vector Test Table Editor-->
+<ttroot version="21" minRequiredVersion="18" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+  <tt>
+    <tf navid="11d806e4-5d08-44bc-9229-54ac1562980d">
+      <title>ref_dtc_WindowDownUp</title>
+      <tc>
+        <title>Test Case 1</title>
+        <tcid>617c2e6d-ae0a-7b21-be65-3e1e1fca6ffc</tcid>
+        <breakonfail>true</breakonfail>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_BinaryLink_53104f9a_861d_4579_a9ef_0d8969377478_0</name>
+        </testdiagramhelperfunction>
+        <for>
+          <title />
+          <loopvar>count</loopvar>
+          <loopvartype>int64</loopvartype>
+          <startvalue>
+            <const>1</const>
+          </startvalue>
+          <stopvalue>
+            <const>15</const>
+          </stopvalue>
+          <increment>
+            <const>1</const>
+          </increment>
+          <testdiagramhelperfunction>
+            <title />
+            <name>MelFunction_BinaryLink_ad8c6d01_514d_475b_b34a_b2f466ac6192_1</name>
+            <param>
+              <type>int</type>
+              <value>
+                <variable>count</variable>
+              </value>
+            </param>
+          </testdiagramhelperfunction>
+          <testdiagramhelperfunction>
+            <title />
+            <name>MelFunction_Check_0e02d411_9bbf_4035_8fe2_73ed8678f2e2_2</name>
+            <param>
+              <type>int</type>
+              <value>
+                <variable>count</variable>
+              </value>
+            </param>
+          </testdiagramhelperfunction>
+          <testdiagramhelperfunction>
+            <title />
+            <name>MelFunction_BinaryLink_e90ef076_623f_41b4_a4f7_2b77c5506fb2_3</name>
+            <param>
+              <type>int</type>
+              <value>
+                <variable>count</variable>
+              </value>
+            </param>
+          </testdiagramhelperfunction>
+        </for>
+        <for>
+          <title />
+          <loopvar>count</loopvar>
+          <loopvartype>int64</loopvartype>
+          <startvalue>
+            <const>14</const>
+          </startvalue>
+          <stopvalue>
+            <const>0</const>
+          </stopvalue>
+          <increment>
+            <const>-1</const>
+          </increment>
+          <testdiagramhelperfunction>
+            <title />
+            <name>MelFunction_BinaryLink_260b67e7_3780_4744_a579_7a6816aa40b4_4</name>
+            <param>
+              <type>int</type>
+              <value>
+                <variable>count</variable>
+              </value>
+            </param>
+          </testdiagramhelperfunction>
+          <testdiagramhelperfunction>
+            <title />
+            <name>MelFunction_Check_4f212dc7_cdb6_47f2_9f09_e2cf9087294b_5</name>
+            <param>
+              <type>int</type>
+              <value>
+                <variable>count</variable>
+              </value>
+            </param>
+          </testdiagramhelperfunction>
+          <testdiagramhelperfunction>
+            <title />
+            <name>MelFunction_BinaryLink_a4a60f9b_c7fe_4862_b56a_9a19e8161992_6</name>
+            <param>
+              <type>int</type>
+              <value>
+                <variable>count</variable>
+              </value>
+            </param>
+          </testdiagramhelperfunction>
+        </for>
+        <testdiagramhelperfunction>
+          <title />
+          <name>MelFunction_BinaryLink_795f3716_fa2f_46a7_89b8_14346c9f14fa_7</name>
+        </testdiagramhelperfunction>
+      </tc>
+    </tf>
+  </tt>
+  <ttlib>
+    <ts_definitions />
+    <tc_definitions />
+    <function_definitions>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_53104f9a_861d_4579_a9ef_0d8969377478_0</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|IgnitionStart|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>Ign_ON</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title />
+          <time>
+            <value>
+              <const>500</const>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_ad8c6d01_514d_475b_b34a_b2f466ac6192_1</name>
+        <parameters>
+          <parameter_definition>
+            <name>count</name>
+            <type>int</type>
+          </parameter_definition>
+        </parameters>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>Roll_Down</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_Check_0e02d411_9bbf_4035_8fe2_73ed8678f2e2_2</name>
+        <parameters>
+          <parameter_definition>
+            <name>count</name>
+            <type>int</type>
+          </parameter_definition>
+        </parameters>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|WindowState|4|False|END_OF_OBJECT_FrameData|WindowPosition|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <variable>count</variable>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_e90ef076_623f_41b4_a4f7_2b77c5506fb2_3</name>
+        <parameters>
+          <parameter_definition>
+            <name>count</name>
+            <type>int</type>
+          </parameter_definition>
+        </parameters>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>No_Request</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title />
+          <time>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_260b67e7_3780_4744_a579_7a6816aa40b4_4</name>
+        <parameters>
+          <parameter_definition>
+            <name>count</name>
+            <type>int</type>
+          </parameter_definition>
+        </parameters>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>Roll_Up</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_Check_4f212dc7_cdb6_47f2_9f09_e2cf9087294b_5</name>
+        <parameters>
+          <parameter_definition>
+            <name>count</name>
+            <type>int</type>
+          </parameter_definition>
+        </parameters>
+        <awaitvaluematch>
+          <title />
+          <timeout>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </timeout>
+          <compare>
+            <dbobject>DBSignal_BEGIN_OF_OBJECT|1|NodeOrFrameData_BEGIN_OF_OBJECT|1|1|CAN|1|ref_testTFS|Doors|END_OF_OBJECT_NodeOrFrameData|FrameData_BEGIN_OF_OBJECT|1|255|255|0|0|WindowState|4|False|END_OF_OBJECT_FrameData|WindowPosition|1|END_OF_OBJECT_|</dbobject>
+            <eq>
+              <variable>count</variable>
+            </eq>
+          </compare>
+        </awaitvaluematch>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_a4a60f9b_c7fe_4862_b56a_9a19e8161992_6</name>
+        <parameters>
+          <parameter_definition>
+            <name>count</name>
+            <type>int</type>
+          </parameter_definition>
+        </parameters>
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|WindowRequest|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>No_Request</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title />
+          <time>
+            <value>
+              <const>100</const>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </testdiagramhelperfunction_definition>
+      <testdiagramhelperfunction_definition>
+        <name>MelFunction_BinaryLink_795f3716_fa2f_46a7_89b8_14346c9f14fa_7</name>
+        <parameters />
+        <set>
+          <title />
+          <in>
+            <assignment>
+              <sink>
+                <dbobject>SysVar_BEGIN_OF_OBJECT|1|IgnitionStart|testNS|-1|0|END_OF_OBJECT_SysVar|</dbobject>
+              </sink>
+              <source>
+                <valuetable_entry>Ign_OFF</valuetable_entry>
+              </source>
+            </assignment>
+          </in>
+        </set>
+        <wait>
+          <title />
+          <time>
+            <value>
+              <const>500</const>
+            </value>
+            <unit>ms</unit>
+          </time>
+        </wait>
+      </testdiagramhelperfunction_definition>
+    </function_definitions>
+  </ttlib>
+</ttroot>

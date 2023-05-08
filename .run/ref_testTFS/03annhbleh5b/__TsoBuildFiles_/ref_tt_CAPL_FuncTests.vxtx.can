@@ -1,0 +1,51 @@
+﻿/* !Encoding: 65001  */
+includes
+{
+  #include "__VariablesLib.cin"
+  #include "__CaplGeneratorLib.cin"
+  #include "__CANoeReportFuntionsLib.cin"
+}
+
+variables
+{
+  // Global variables defined within this CAPL file
+}
+
+void Ttop31c6k_Tet_TtInit()
+{
+
+}
+
+void Ttop31c6k_Tet_Tf_Preparation0()
+{
+  TestPreparationBegin();
+  {
+    {
+      CreateCaplIFFunction("cf_testPreparation", __eFct);
+      CallInterfaceFunction(__cEmpty, __cEmpty, "0");
+    }
+
+
+  }
+  TestPreparationEnd();
+}
+
+
+void Ttop31c6k_Tet_CaplTcCall0()
+{
+  CreateCaplIFFunction("ctc_WindowDownUp", __eTcDef);
+  CallInterfaceFunction(__cEmpty , "", __cEmpty );
+}
+
+void Ttop31c6k_Tet_CaplTcCall1()
+{
+  CreateCaplIFFunction("ctc_RequestLock", __eTcDef);
+  CallInterfaceFunction(__cEmpty , "", __cEmpty );
+}
+
+void Ttop31c6k_Tet_CaplTcCall2()
+{
+  CreateCaplIFFunction("ctc_AutoLock", __eTcDef);
+  CallInterfaceFunction(__cEmpty , "", __cEmpty );
+}
+

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Vector Test Table Editor-->
+<ttroot version="21" xmlns="http://www.vector-informatik.de/ITE/TestTable/1.0">
+  <tt>
+    <tf navid="8228a11c-411f-4932-a449-3ec88a433a36">
+      <title />
+      <preparation>
+        <title />
+        <netfunction>
+          <title />
+          <name>nf_Preparation</name>
+          <class>MyTestClass</class>
+          <assembly />
+        </netfunction>
+      </preparation>
+      <nettestcase>
+        <title />
+        <name>ntc_WindowDownUp</name>
+        <class>MyTestClass</class>
+        <assembly />
+        <tcid>f2f8c0c2-3bdf-4801-b48b-ad9bdf2ef9d1</tcid>
+      </nettestcase>
+      <nettestcase>
+        <title />
+        <name>ntc_RequestLock</name>
+        <class>MyTestClass</class>
+        <assembly />
+        <tcid>b932475c-1ebc-410e-bd89-a44934c17eb4</tcid>
+      </nettestcase>
+      <nettestcase>
+        <title />
+        <name>ntc_AutoLock</name>
+        <class>MyTestClass</class>
+        <assembly />
+        <tcid>e20757e6-8129-4fa8-93df-cbf6f1c7193b</tcid>
+      </nettestcase>
+    </tf>
+  </tt>
+  <ttlib>
+    <ts_definitions />
+    <tc_definitions />
+    <function_definitions />
+  </ttlib>
+</ttroot>
